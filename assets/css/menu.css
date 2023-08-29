@@ -153,3 +153,132 @@ a {
 .active {
     color: var(--white-color);
 }
+
+/*================= MENU DROPDOWN =================*/
+.dropdown__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown__icon {
+    font-size: 1.3rem;
+    transition: .5s;
+}
+
+.dropdown__menu {
+    margin: 1rem 0 0 1rem;
+    display: none;
+}
+
+.dropdown__item {
+    margin: 1rem 0;
+}
+
+.dropdown:hover > .dropdown__menu{
+    display: block;
+}
+
+.dropdown:hover .dropdown__icon {
+    transform: rotate(180deg);
+}
+
+/*================= RESPONSIVO =================*/
+@media screen and (min-width: 576px){
+    .nav {
+        width: 288px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    body {
+        margin: 0;
+    }
+
+    .header {
+        height: calc(var(--header-height) + 1rem);
+    }
+
+    .header__logo, .header__toggle {
+        display: none;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav__content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__perfil {
+        flex-direction: row;
+        text-align: initial;
+        margin-bottom: 0;
+    }
+
+    .nav__img {
+        width: 40px;
+        height: 40px;
+        margin-right: .5rem;
+        margin-bottom: 0;
+    }
+
+    .nav__img img {
+        width: 46px;
+    }
+
+    .nav__name {
+        color: var(--dark-color);
+    }
+
+    .nav__link {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__item {
+        margin: 0 1.5rem;
+        padding: 1.4rem 0;
+    }
+
+    .nav__link {
+        color: var(--dark-color);
+    }
+
+    .nav__link:hover {
+        color: var(--first-color);
+    }
+
+    .active {
+        color: var(--first-color);
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown__menu {
+        position: fixed;
+        margin: 0;
+        top: calc(var(--header-height) + 1rem);
+        padding: .5rem 1.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+        border-radius: .5rem;
+    }
+
+    .dropdown__item {
+        margin: .5rem 0;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
