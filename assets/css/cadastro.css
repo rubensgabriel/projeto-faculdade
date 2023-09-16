@@ -48,6 +48,10 @@ input {
     width: 100%;
 }
 
+input:focus {
+    outline: 2px solid #0d5788;
+  }
+
 #btn-medicamento {
     background-color: #0d5788;
     border: none;
@@ -61,6 +65,7 @@ input {
     width: 100%;
     font-size: 15px;
 }
+
 main.table {
     margin: auto;
     text-align: center;
@@ -143,6 +148,9 @@ tbody > tr:nth-child(odd){
 }
 
 @media (max-width: 500px) {
+    main.table {
+        width: 95vw;
+    }
     .form_medicamentos .form-section {
         display: grid;
         grid-template-columns: 1.5fr 1.5fr 1fr;
@@ -164,4 +172,6 @@ tbody > tr:nth-child(odd){
     label {
         font-size: 15px;
     }
+
+    
 }
