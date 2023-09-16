@@ -13,14 +13,14 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/mudarsenha.css">
 </head>
 <body>
     <div class="login">
         <img src="assets/img/login-bg.jpg" alt="Imagem de fundo azul" class="login__img">
         <form action="" class="login__form">
-            <h1 class="login__title">Entrar</h1>
-
             <div class="login__content">
+                <h1 class="login__title">Informe seu email para o envio do código</h1>
                 <div class="login__box">
                     <i class="ri-user-3-line login__icon"></i>
 
@@ -29,29 +29,22 @@
                         <label for="" class="login__label">Email</label>
                     </div>
                 </div>
-
+                <button class="login__button">Enviar Código</button>
+                <h1 class="login__title">Informe o código enviado para o seu email</h1>
                 <div class="login__box">
                     <i class="ri-lock-2-line login__icon"></i>
 
                     <div class="login__box-input">
                         <input type="password" required class="login__input" id="login-pass" placeholder=" ">
-                        <label for="" class="login__label">Senha</label>
-                        <i class="ri-eye-off-line login__eye" id="login-eye"></i>
+                        <label for="" class="login__label">Código</label>
+                        
                     </div>
                 </div>
             </div>
 
-            <div class="login__check">
-                <div class="login__check-group">
-                    <input type="checkbox" class="login__check-input">
-                    <label for="" class="login__check-label">Lembrar-me</label>
-                </div>
+            <button class="login__button">Confirmar</button>
 
-                <a href="codigo.html" class="login__forgot">Esqueceu sua Senha?</a>
-            </div>
-
-            <button class="login__button">Entrar</button>
-
+            
         </form>
     </div>
 
