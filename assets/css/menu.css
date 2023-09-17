@@ -7,7 +7,7 @@
     --header-height: 3rem;
 
     /* CORES */
-    --first-color: #1f8dd6;
+    --first-color: #1d7fc0;
     --first-color-light: #C4C7F5;
     --dark-color: #0E1026;
     --white-color: #FBFBFB;
@@ -137,11 +137,12 @@ a {
 }
 
 .nav__link {
-    color: var(--first-color-light);
+    color: var(--white-color);
+    font-size: 16px;
 }
 
 .nav__link:hover {
-    color: var(--white-color);
+    color: var(--first-color-light);
 }
 
 /*================= MENU LATERAL =================*/

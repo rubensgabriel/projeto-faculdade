@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <!-- BOXICONS -->
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
-        <!-- CSS -->
-        <link rel="stylesheet" href="assets/css/menu.css">
-        <link rel="stylesheet" href="assets/css/cadastro.css">
-        <title>Sistema Médico</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+    <title>Sistema Médico</title>
+</head>
 <body>
+    
     <header class="header">
         <a href="#" class="header__logo">Rubens</a>
 
@@ -62,6 +63,192 @@
             </div>
         </nav>
     </header>
+
+    <main class="table">
+        <section class="table__header">
+            <h2>Dados para Cadastro de Residentes</h1>
+        </section>
+        <form action="" class="cadastro_medicamento">
+            <section class="form_medicamentos">
+            <div class="form-section">
+                <div class="input-area">
+                    <label id="nome" for="">Nome Completo</label>
+                    <input type="text" required placeholder="">
+                </div>
+                <div class="input-area">
+                    <label id="nome" for=""></label>
+                    <input type="nome" required placeholder="">
+                </div>
+                <div class="input-area">
+                    <label id="nome" for="">Quantidade</label>
+                    <input type="nome" required placeholder="0">
+                </div>
+                <div class="input-area">
+                    <label id="nome" for="">Origem</label>
+                    <input type="nome" required placeholder="">
+                </div>
+                <div class="input-area">
+                    <label id="date" for="">Data de Nascimento</label>
+                    <input type="nome" required placeholder="00/00/0000">
+                </div>
+                <div class="input-area">
+                    <label id="nome" for="">Condições Pré-existentes</label>
+                    <input type="nome" required placeholder="R$0,00">
+                </div>
+                <div class="btn-area">
+                    <button id="btn-medicamento" type="submit">Cadastrar</button>
+                </div>
+            </div>
+            
+            </section>
+        </form>
+        
+        <section class="table__header">
+            <h2>Residentes Cadastrados</h1>
+        </section>
+        <section class="table__search">
+            <div class="filter-content">
+                <i class='bx bx-filter-alt btn-filter'></i>
+                <p>Filtrar</p>
+            </div>
+            <input class="search" type="text" placeholder="Pesquisar...">
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                     <th scope="col">ID</th>
+                     <th scope="col">Usuário</th>
+                     <th scope="col">Medicamento</th>
+                     <th scope="col">Lote</th>
+                     <th scope="col">Validade</th>
+                     <th scope="col">Quantidade</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Rubens</td>
+                        <td>Dipirona</td>
+                        <td>5</td>
+                        <td>02/01/2024</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Rubens</td>
+                        <td>Omeprazol</td>
+                        <td>5</td>
+                        <td>02/01/2024</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Rubens</td>
+                        <td>Dipirona</td>
+                        <td>18</td>
+                        <td>02/01/2024</td>
+                        <td>98</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rubens</td>
+                        <td>Dipirona</td>
+                        <td>5</td>
+                        <td>02/01/2024</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Rubens</td>
+                        <td>Omeprazol</td>
+                        <td>5</td>
+                        <td>02/01/2024</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Rubens</td>
+                        <td>Dipirona</td>
+                        <td>18</td>
+                        <td>02/01/2024</td>
+                        <td>98</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rubens</td>
+                        <td>Dipirona</td>
+                        <td>5</td>
+                        <td>02/01/2024</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Rubens</td>
+                        <td>Omeprazol</td>
+                        <td>5</td>
+                        <td>02/01/2024</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Rubens</td>
+                        <td>Dipirona</td>
+                        <td>18</td>
+                        <td>02/01/2024</td>
+                        <td>98</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rubens</td>
+                        <td>Dipirona</td>
+                        <td>5</td>
+                        <td>02/01/2024</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Rubens</td>
+                        <td>Omeprazol</td>
+                        <td>5</td>
+                        <td>02/01/2024</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Rubens</td>
+                        <td>Dipirona</td>
+                        <td>18</td>
+                        <td>02/01/2024</td>
+                        <td>98</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rubens</td>
+                        <td>Dipirona</td>
+                        <td>5</td>
+                        <td>02/01/2024</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Rubens</td>
+                        <td>Omeprazol</td>
+                        <td>5</td>
+                        <td>02/01/2024</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Rubens</td>
+                        <td>Dipirona</td>
+                        <td>18</td>
+                        <td>02/01/2024</td>
+                        <td>98</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
     <script src="assets/js/menu.js"></script>
 </body>
 </html>
