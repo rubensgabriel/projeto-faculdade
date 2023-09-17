@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+.alert-content {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    padding: 20px 10px 30px;
+    font-family: 'Montserrat';
+    border: 3px solid #136196;
+    border-radius: 15px;
+}
+img {
+    width: 80px;
+    margin-bottom: -10px;
+}
+
+.btn-modal {
+    background-color: #136196;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+}
