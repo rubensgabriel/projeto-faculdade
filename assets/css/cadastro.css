@@ -107,7 +107,7 @@ main.table {
 
 .search {
     border-radius: 20px;
-    width: 88%;
+    width: 70%;
     padding: 15px;
     height: 40px;
     font-size: 15px;
@@ -216,5 +216,7 @@ tbody > tr:nth-child(odd){
         font-size: 15px;
     }
 
-    
+    .search {
+        width: 85%;
+    }
 }
