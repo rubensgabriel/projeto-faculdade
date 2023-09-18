@@ -12,7 +12,7 @@
 }
 
 .dados-emergencia {
-    background-color: #1a75b1de;
+    background-color: #1a75b1d3;
     color: #ffffff;
     box-sizing: border-box;
     border-radius: 5px;
@@ -62,7 +62,7 @@
 @media (max-width: 400px) {
     .form_medicamentos .form-section {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 46% 1fr;
         gap: 10px;
         margin-bottom: 10px;
     }
