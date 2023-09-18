@@ -106,12 +106,34 @@
         <section class="table__header">
             <h2>Medicamentos Cadastrados</h1>
         </section>
-        <section class="table__search">
-            <div class="filter-content">
-                <i class='bx bx-filter-alt btn-filter'></i>
-                <p>Filtrar</p>
+        <section class="filter-content">
+            
+            <div class="input-area">
+                <label id="nome" for="">Medicamento</label>
+                <select name="nome" id="nome">
+                    <option value="Omeprazol">Omeprazol</option>
+                    <option value="Omeprazol">Omeprazol</option>
+                    <option value="Omeprazol">Omeprazol</option>
+                </select>
             </div>
-            <input class="search" type="text" placeholder="Pesquisar...">
+            <div class="input-area">
+                <label id="nome" for="">Validade</label>
+                <input type="nome" required placeholder="00/00/0000">
+            </div>
+            <div class="input-area">
+                <label id="nome" for="">Quantidade</label>
+                <input type="nome" required placeholder="">
+            </div>
+            <div class="input-area">
+                <label id="origem" for="">Origem</label>
+                <select name="origem" id="origem">
+                    <option value="Omeprazol">Doação</option>
+                    <option value="Omeprazol">Comprado</option>
+                    <option value="Omeprazol">Governo</option>
+                </select>
+            </div>
+                <button id="btn-pesquisa">Pesquisar</button>
+           
         </section>
         <section class="table__body">
             <table>
@@ -121,6 +143,8 @@
                      <th scope="col">Medicamento</th>
                      <th scope="col">Lote</th>
                      <th scope="col">Validade</th>
+                     <th scope="col">Origem</th>
+                     <th scope="col">Custo</th>
                      <th scope="col">Quantidade</th>
                 </thead>
                 <tbody>
@@ -130,23 +154,9 @@
                         <td>Dipirona</td>
                         <td>5</td>
                         <td>02/01/2024</td>
+                        <td>Doação</td>
+                        <td>0</td>
                         <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Rubens</td>
-                        <td>Omeprazol</td>
-                        <td>5</td>
-                        <td>02/01/2024</td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Rubens</td>
-                        <td>Dipirona</td>
-                        <td>18</td>
-                        <td>02/01/2024</td>
-                        <td>98</td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -154,23 +164,9 @@
                         <td>Dipirona</td>
                         <td>5</td>
                         <td>02/01/2024</td>
+                        <td>Doação</td>
+                        <td>0</td>
                         <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Rubens</td>
-                        <td>Omeprazol</td>
-                        <td>5</td>
-                        <td>02/01/2024</td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Rubens</td>
-                        <td>Dipirona</td>
-                        <td>18</td>
-                        <td>02/01/2024</td>
-                        <td>98</td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -178,23 +174,9 @@
                         <td>Dipirona</td>
                         <td>5</td>
                         <td>02/01/2024</td>
+                        <td>Doação</td>
+                        <td>0</td>
                         <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Rubens</td>
-                        <td>Omeprazol</td>
-                        <td>5</td>
-                        <td>02/01/2024</td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Rubens</td>
-                        <td>Dipirona</td>
-                        <td>18</td>
-                        <td>02/01/2024</td>
-                        <td>98</td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -202,23 +184,9 @@
                         <td>Dipirona</td>
                         <td>5</td>
                         <td>02/01/2024</td>
+                        <td>Doação</td>
+                        <td>0</td>
                         <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Rubens</td>
-                        <td>Omeprazol</td>
-                        <td>5</td>
-                        <td>02/01/2024</td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Rubens</td>
-                        <td>Dipirona</td>
-                        <td>18</td>
-                        <td>02/01/2024</td>
-                        <td>98</td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -226,23 +194,109 @@
                         <td>Dipirona</td>
                         <td>5</td>
                         <td>02/01/2024</td>
+                        <td>Doação</td>
+                        <td>0</td>
                         <td>9</td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>Rubens</td>
-                        <td>Omeprazol</td>
-                        <td>5</td>
-                        <td>02/01/2024</td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
+                        <td>1</td>
                         <td>Rubens</td>
                         <td>Dipirona</td>
-                        <td>18</td>
+                        <td>5</td>
                         <td>02/01/2024</td>
-                        <td>98</td>
+                        <td>Doação</td>
+                        <td>0</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rubens</td>
+                        <td>Dipirona</td>
+                        <td>5</td>
+                        <td>02/01/2024</td>
+                        <td>Doação</td>
+                        <td>0</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rubens</td>
+                        <td>Dipirona</td>
+                        <td>5</td>
+                        <td>02/01/2024</td>
+                        <td>Doação</td>
+                        <td>0</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rubens</td>
+                        <td>Dipirona</td>
+                        <td>5</td>
+                        <td>02/01/2024</td>
+                        <td>Doação</td>
+                        <td>0</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rubens</td>
+                        <td>Dipirona</td>
+                        <td>5</td>
+                        <td>02/01/2024</td>
+                        <td>Doação</td>
+                        <td>0</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rubens</td>
+                        <td>Dipirona</td>
+                        <td>5</td>
+                        <td>02/01/2024</td>
+                        <td>Doação</td>
+                        <td>0</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rubens</td>
+                        <td>Dipirona</td>
+                        <td>5</td>
+                        <td>02/01/2024</td>
+                        <td>Doação</td>
+                        <td>0</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rubens</td>
+                        <td>Dipirona</td>
+                        <td>5</td>
+                        <td>02/01/2024</td>
+                        <td>Doação</td>
+                        <td>0</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rubens</td>
+                        <td>Dipirona</td>
+                        <td>5</td>
+                        <td>02/01/2024</td>
+                        <td>Doação</td>
+                        <td>0</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rubens</td>
+                        <td>Dipirona</td>
+                        <td>5</td>
+                        <td>02/01/2024</td>
+                        <td>Doação</td>
+                        <td>0</td>
+                        <td>9</td>
                     </tr>
                 </tbody>
             </table>
