@@ -44,8 +44,9 @@ label {
 
 input, select {
     border: none;
-    height: 20px;
-    padding: 15px 8px;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 5px 8px;
     border-radius: 2px;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.192);
     width: 100%;
@@ -102,7 +103,7 @@ main.table {
     place-content: center;
     margin: 20px 0px 0px;
     background-color: #1a74b1;
-    padding: 18px 100px;
+    padding: 10px 100px 20px;
     box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.178) ;
     gap: 20px;
 }
@@ -171,6 +172,38 @@ main.table {
     visibility: visible;
 }
 
+.btn-edicao, .btn-exclusao {
+    padding: 8px;
+    background-color: rgb(11, 96, 153);
+    font-size: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+
+.btn-exclusao {
+    background-color: rgb(182, 1, 1);
+    transition: all .3s ease-in-out;
+}
+
+.btn-edicao:hover {
+    color: rgb(11, 96, 153);
+    background-color: white;
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.349) ;
+    transition: all .3s ease-in-out;
+}
+
+.btn-exclusao:hover {
+    color: rgb(196, 1, 1);
+    background-color: white;
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.349) ;
+    transition: all .3s ease-in-out;
+    font-weight: bold;
+}
+
 table {
     width: 100%;
 }
@@ -204,22 +237,21 @@ tbody > tr:nth-child(odd){
 
 @media (max-width: 700px) {
     .filter-content {
-        display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        align-content: center;
-        place-content: center;
-        margin: 20px 0px 0px;
-        background-color: #1a74b1;
         padding: 18px 20px;
-        box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.178) ;
-        gap: 15px;
+        gap: 10px 15px;
     }
 
     #btn-pesquisa {
         grid-column: 2 span / 3;
         place-self: center;
-        width: 60%;
+        width: 55%;
+        margin-top: 5px;
+    }
+
+    table, th, td {
+        padding: .8rem;
+        
     }
 
 }

@@ -26,7 +26,7 @@
 
 .dados-emergencia:hover {
     transition: all .3s ease-in-out;
-    background-color: rgba(26, 117, 177, 0.89);
+    background-color: rgba(23, 106, 161, 0.89);
 }
 
 .dados-emergencia-input {
