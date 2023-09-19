@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+    <link rel="stylesheet" href="assets/css/cadastro-usuario.css">
+    <title>Sistema Médico</title>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" class="header__logo">Rubens</a>
+
+        <div class="header__toggle">
+            <i class="bx bx-menu" id="header-toggle"></i>
+        </div>
+
+        <nav class="nav" id="nav-menu">
+            <div class="nav__content bd-grid">
+                <a href="#" class="nav__perfil">
+                    <div class="nav__img">
+                        <img src="assets/img/user3.png" alt="">
+                    </div>
+
+                    <div>
+                        <span class="nav__name">Rubens</span>
+                        <span class="nav__name">Rodrigues</span>
+                    </div>
+                </a>
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="principal.html" class="nav__link">Início</a></li>
+
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link dropdown__link">Cadastrar<i class="bx bx-chevron-down dropdown__icon"></i></a>
+
+                            <ul class="dropdown__menu">
+                                <li class="dropdown__item"><a href="residentes.html" class="nav__link">Residentes</a></li>
+                                <li class="dropdown__item"><a href="medicamentos.html" class="nav__link">Medicamentos</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item"><a href="historico.html" class="nav__link">Histórico</a></li>
+
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link dropdown__link">Relatório <i class="bx bx-chevron-down dropdown__icon"></i></a>
+
+                            <ul class="dropdown__menu">
+                                <li class="dropdown__item"><a href="#" class="nav__link">Residentes</a></li>
+                                <li class="dropdown__item"><a href="#" class="nav__link">Medicamentos</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="table">
+        <section class="table__header">
+            <h2>Usuários Cadastrados</h1>
+        </section>
+        <a id="btn-cadastro" href=""> Novo Usuário</a>
+        <section class="table__body">
+            <table>
+                <thead>
+                     <th scope="col">CPF</th>
+                     <th scope="col">Usuario</th>
+                     <th scope="col">Apelido</th>
+                     <th scope="col">Perfil</th>
+                     <th scope="col"></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>122.333.145-12</td>
+                        <td>Rubens Gabriel</td>
+                        <td>Rubens</td>
+                        <td>Administrador</td>
+                        <td><i class='bx bxs-pencil btn-edicao' title="Excluir"></i><i class='bx bxs-edit btn-acesso' title="Gerenciar Acessos"></i></td>
+                    </tr>
+                    <tr>
+                        <td>122.333.145-12</td>
+                        <td>Rubens Gabriel</td>
+                        <td>Rubens</td>
+                        <td>Administrador</td>
+                        <td><i class='bx bxs-pencil btn-edicao' title="Excluir"></i><i class='bx bxs-edit btn-acesso' title="Gerenciar Acessos"></i></td>
+                    </tr>
+                    <tr>
+                        <td>122.333.145-12</td>
+                        <td>Rubens Gabriel</td>
+                        <td>Rubens</td>
+                        <td>Administrador</td>
+                        <td><i class='bx bxs-pencil btn-edicao' title="Excluir"></i><i class='bx bxs-edit btn-acesso' title="Gerenciar Acessos"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>

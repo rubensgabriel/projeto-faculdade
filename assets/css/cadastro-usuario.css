@@ -1,0 +1,51 @@
+#btn-cadastro {
+    background-color: #165986;
+    box-sizing: border-box;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 18px;
+    margin-left: 2.5%;
+    display: flex;
+    font-weight: 600;
+    cursor: pointer;
+    width: 140px;
+    transition: all .3s ease-in-out;
+}
+
+#btn-cadastro:hover {
+    transform: scale(1.08);
+    transition: all .3s ease-in-out;
+    background-color: aliceblue;
+    color: #165986;
+}
+
+.btn-acesso {
+    padding: 8px;
+    background-color: rgb(236, 177, 15);
+    font-size: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+
+.btn-acesso:hover {
+    color: rgb(236, 177, 15);
+    background-color: white;
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.349) ;
+    transition: all .3s ease-in-out;
+    font-weight: bold;
+}
+
+td, th {
+    min-width: 140px;
+}
+
+td {
+    padding: .6rem;
+}
