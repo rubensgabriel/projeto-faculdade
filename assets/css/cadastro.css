@@ -68,6 +68,7 @@ input:focus {
     border-radius: 2px;
     width: 100%;
     font-size: 15px;
+    transition: all .3s ease-in-out;
 }
 
 main.table {
@@ -122,6 +123,13 @@ main.table {
     font-size: 15px;
     place-self: end;
     place-content: end;
+    transition: all .3s ease-in-out;
+}
+
+#btn-pesquisa:hover, #btn-medicamento:hover {
+    color: #0b4b75;
+    background-color: white;
+    transition: all .3s ease-in-out;
 }
 
 .filter-content label {
@@ -250,7 +258,7 @@ tbody > tr:nth-child(odd){
     }
 
     table, th, td {
-        padding: .8rem;
+        padding: .6rem;
     }
 
 }
