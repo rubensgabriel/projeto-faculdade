@@ -258,7 +258,11 @@ tbody > tr:nth-child(odd){
     }
 
     table, th, td {
-        padding: .6rem;
+        padding: .7rem;
+    }
+
+    td {
+        padding: .4rem;
     }
 
 }
