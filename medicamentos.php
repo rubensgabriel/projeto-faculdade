@@ -84,8 +84,13 @@
                     <input type="nome" required placeholder="0">
                 </div>
                 <div class="input-area">
-                    <label id="nome" for="">Origem</label>
-                    <input type="nome" required placeholder="">
+                    <label id="origem" for="">Origem</label>
+                    <select name="origem" id="origem">
+                        <option value="">Escolha uma opção</option>
+                        <option value="Omeprazol">Doação</option>
+                        <option value="Omeprazol">Comprado</option>
+                        <option value="Omeprazol">Governo</option>
+                    </select>
                 </div>
                 <div class="input-area">
                     <label id="date" for="">Validade</label>
