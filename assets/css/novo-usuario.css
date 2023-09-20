@@ -1,0 +1,82 @@
+main.table {
+    margin: auto;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 10px;
+    max-width: 620px;
+    height: fit-content;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.btn-back {
+    color: white;
+    padding: 8px;
+    font-size: 25px;
+    margin-top: 12px;
+    align-self: flex-start;
+    transition: all .3s ease-in-out;
+}
+
+.btn-back:hover {
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+    text-shadow: 5px 6px 7px black;
+}
+
+.back-link {
+    position: absolute;
+    left: 18px;
+    top: -6px;
+}
+
+.form_medicamentos .form-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-sub-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.input-area {
+    width: 100%;
+}
+
+.input-area input, select {
+    font-size: 15px;
+}
+
+.btn-area {
+    align-self: center;
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .form_medicamentos {
+        margin: 20px 28px;
+    }
+
+    .back-link {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .form-sub-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+    }   
+}
