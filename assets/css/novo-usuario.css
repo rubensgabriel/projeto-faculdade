@@ -3,7 +3,7 @@ main.table {
     text-align: center;
     margin-top: 90px;
     margin-bottom: 10px;
-    max-width: 600px;
+    max-width: 520px;
     height: fit-content;
 }
 
@@ -65,9 +65,10 @@ h2 {
 
     .back-link {
         position: absolute;
-        left: 5px;
-        top: 5px;
+        left: 10px;
+        top: -7px;
     }
+    
     h2 {
         font-size: 18px;
     }

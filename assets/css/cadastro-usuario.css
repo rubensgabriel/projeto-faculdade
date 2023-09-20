@@ -1,5 +1,5 @@
 main.table {
-    height: 85vh;
+    height: fit-content;
 }
 
 #btn-cadastro {
