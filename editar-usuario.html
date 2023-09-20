@@ -10,7 +10,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/cadastro.css">
-    <link rel="stylesheet" href="assets/css/cadastro-usuario.css">
+    <link rel="stylesheet" href="assets/css/novo-usuario.css">
+    <link rel="stylesheet" href="assets/css/editar-usuario.css">
     <title>Sistema Médico</title>
 </head>
 <body>
@@ -66,44 +67,47 @@
 
     <main class="table">
         <section class="table__header">
-            <h2>Usuários Cadastrados</h1>
+            <h2>Editar Informações</h1>
         </section>
-        <a id="btn-cadastro" href="novo-usuario.html"> Novo Usuário</a>
-        <section class="table__body">
-            <table>
-                <thead>
-                     <th scope="col">CPF</th>
-                     <th scope="col">Usuario</th>
-                     <th scope="col">Apelido</th>
-                     <th scope="col">Perfil</th>
-                     <th scope="col"></th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>122.333.145-12</td>
-                        <td>Rubens Gabriel</td>
-                        <td>Rubens</td>
-                        <td>Administrador</td>
-                        <td><a href="editar-usuario.html"><i class='bx bxs-pencil btn-edicao' title="Editar Informações"></i></a><a href="gerenciar-acessos.html"><i class='bx bxs-edit btn-acesso' title="Gerenciar Acessos"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>122.333.145-12</td>
-                        <td>Rubens Gabriel</td>
-                        <td>Rubens</td>
-                        <td>Administrador</td>
-                        <td><a href="editar-usuario.html"><i class='bx bxs-pencil btn-edicao' title="Editar Informações"></i></a><a href="gerenciar-acessos.html"><i class='bx bxs-edit btn-acesso' title="Gerenciar Acessos"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>122.333.145-12</td>
-                        <td>Rubens Gabriel</td>
-                        <td>Rubens</td>
-                        <td>Administrador</td>
-                        <td><a href="editar-usuario.html"><i class='bx bxs-pencil btn-edicao' title="Editar Informações"></i></a><a href="gerenciar-acessos.html"><i class='bx bxs-edit btn-acesso' title="Gerenciar Acessos"></i></a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <a class="back-link" href="cadastro-usuario.html" title="Voltar"><i class='bx bx-arrow-back btn-back'></i></a>
+        <form action="" class="cadastro_medicamento">
+            <section class="form_medicamentos">
+                <div class="form-section">
+                <div class="input-area">
+                    <label id="nome" for="">Nome Completo</label>
+                    <input type="text" required placeholder="">
+                </div>
+                <div class="input-area">
+                    <label id="nome" for="">Email</label>
+                    <input type="nome" required placeholder="">
+                </div>
+                <div class="form-sub-section">
+                    <div class="input-area">
+                        <label id="nome" for="">CPF</label>
+                        <input type="nome" required placeholder="888.888.888-88">
+                    </div>
+                    <div class="input-area">
+                        <label id="nome" for="">Data de Nascimento</label>
+                        <input type="nome" required placeholder="00/00/0000">
+                    </div>
+                </div>
+                <div class="input-area">
+                    <label id="funcao" for="">Função</label>
+                    <input type="nome" required placeholder="">
+                </div>
+                <div class="buttons-edicao">
+                    <div class="btn-area-edicao">
+                        <button class="btn-medicamento btn-apagar" type="submit">Remover</button>
+                    </div>
+                    <div class="btn-area-edicao">
+                        <button class="btn-medicamento" type="submit">Salvar</button>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </form>
+        
     </main>
-    <script src="assets/js/menu.js"></script>
+    
 </body>
 </html>

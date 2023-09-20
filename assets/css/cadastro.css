@@ -57,7 +57,7 @@ input:focus {
     outline: 2px solid #0d5788;
   }
 
-#btn-medicamento {
+.btn-medicamento {
     background-color: #0d5788;
     border: none;
     height: 40px;
@@ -127,7 +127,7 @@ main.table {
     transition: all .3s ease-in-out;
 }
 
-#btn-pesquisa:hover, #btn-medicamento:hover {
+#btn-pesquisa:hover, .btn-medicamento:hover {
     color: #0b4b75;
     background-color: white;
     transition: all .3s ease-in-out;

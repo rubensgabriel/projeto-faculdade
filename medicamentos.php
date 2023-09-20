@@ -87,9 +87,9 @@
                     <label id="origem" for="">Origem</label>
                     <select name="origem" id="origem">
                         <option value="">Escolha uma opção</option>
-                        <option value="Omeprazol">Doação</option>
-                        <option value="Omeprazol">Comprado</option>
-                        <option value="Omeprazol">Governo</option>
+                        <option value="Doacao">Doação</option>
+                        <option value="Comprado">Comprado</option>
+                        <option value="Governo">Governo</option>
                     </select>
                 </div>
                 <div class="input-area">
