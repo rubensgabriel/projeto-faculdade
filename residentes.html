@@ -78,16 +78,16 @@
                     </div>
                     <div class="input-area">
                         <label id="date" for="">Data de Nascimento</label>
-                        <input type="nome" required placeholder="00/00/0000">
+                        <input type="date" required placeholder="00/00/0000">
                     </div>
                     <div class="form-sub-section">
                         <div class="input-area">
-                            <label id="nome" for="">Condição</label>
-                            <input type="nome" required placeholder="">
+                            <label id="condicao" for="">Condição</label>
+                            <input type="text" required placeholder="">
                         </div>
                         <div class="input-area">
-                            <label id="origem" for="">Sexo</label>
-                            <select name="origem" id="origem">
+                            <label id="sexo" for="">Sexo</label>
+                            <select name="sexo" id="sexo">
                                 <option value="">Escolha uma opção</option>
                                 <option value="Masculino">Masculino</option>
                                 <option value="Feminino">Feminino</option>
@@ -99,19 +99,19 @@
                     <h3>Contato de Emergência</h3>
                     <div class="dados-emergencia-input">
                         <div class="input-area">
-                            <label id="nome" for="">Nome</label>
-                            <input type="nome" required placeholder="">
-                        </div>
-                        <div class="input-area">
-                            <label id="nome" for="">Parentesco</label>
-                            <input type="nome" required placeholder="">
-                        </div>
-                        <div class="input-area">
-                            <label id="nome" for="">Endereço</label>
+                            <label id="nome-contato" for="">Nome</label>
                             <input type="text" required placeholder="">
                         </div>
                         <div class="input-area">
-                            <label id="tel" for="">Telefone</label>
+                            <label id="parentesco" for="">Parentesco</label>
+                            <input type="text" required placeholder="">
+                        </div>
+                        <div class="input-area">
+                            <label id="endereco">Endereço</label>
+                            <input type="text" required placeholder="">
+                        </div>
+                        <div class="input-area">
+                            <label id="telefone" for="">Telefone</label>
                             <input type="tel" required placeholder="(32) 99999-9999">
                         </div>
                     </div>
@@ -127,7 +127,7 @@
         </section>
         <section class="search-content">
             <input class="search-input" type="text" placeholder="Pesquisar...">
-            <button id="btn-pesquisa">Pesquisar</button>
+            <button class="btn-pesquisa">Pesquisar</button>
            
         </section>
         <section class="table__body">
@@ -135,15 +135,17 @@
                 <thead>
                      <th scope="col">ID</th>
                      <th scope="col">Residente</th>
+                     <th scope="col">Sexo</th>
                      <th scope="col">Data de Nascimento</th>
                      <th scope="col">Condição</th>
                      <th scope="col">Contato de Emergência</th>
-                     <th scope="col">Edição</th>
+                     <th scope="col"></th>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
                         <td>Rubens</td>
+                        <td>Masculino</td>
                         <td>02/01/2024</td>
                         <td>Nenhuma</td>
                         <td>Sim</td>
@@ -152,6 +154,7 @@
                     <tr>
                         <td>1</td>
                         <td>Rubens</td>
+                        <td>Masculino</td>
                         <td>02/01/2024</td>
                         <td>Nenhuma</td>
                         <td>Sim</td>
@@ -160,6 +163,7 @@
                     <tr>
                         <td>1</td>
                         <td>Rubens</td>
+                        <td>Masculino</td>
                         <td>02/01/2024</td>
                         <td>Nenhuma</td>
                         <td>Sim</td>
@@ -168,6 +172,7 @@
                     <tr>
                         <td>1</td>
                         <td>Rubens</td>
+                        <td>Masculino</td>
                         <td>02/01/2024</td>
                         <td>Nenhuma</td>
                         <td>Sim</td>
@@ -176,6 +181,7 @@
                     <tr>
                         <td>1</td>
                         <td>Rubens</td>
+                        <td>Masculino</td>
                         <td>02/01/2024</td>
                         <td>Nenhuma</td>
                         <td>Sim</td>
@@ -184,6 +190,7 @@
                     <tr>
                         <td>1</td>
                         <td>Rubens</td>
+                        <td>Masculino</td>
                         <td>02/01/2024</td>
                         <td>Nenhuma</td>
                         <td>Sim</td>
@@ -192,6 +199,7 @@
                     <tr>
                         <td>1</td>
                         <td>Rubens</td>
+                        <td>Masculino</td>
                         <td>02/01/2024</td>
                         <td>Nenhuma</td>
                         <td>Sim</td>
@@ -200,6 +208,7 @@
                     <tr>
                         <td>1</td>
                         <td>Rubens</td>
+                        <td>Masculino</td>
                         <td>02/01/2024</td>
                         <td>Nenhuma</td>
                         <td>Sim</td>
@@ -208,6 +217,7 @@
                     <tr>
                         <td>1</td>
                         <td>Rubens</td>
+                        <td>Masculino</td>
                         <td>02/01/2024</td>
                         <td>Nenhuma</td>
                         <td>Sim</td>
@@ -216,6 +226,7 @@
                     <tr>
                         <td>1</td>
                         <td>Rubens</td>
+                        <td>Masculino</td>
                         <td>02/01/2024</td>
                         <td>Nenhuma</td>
                         <td>Sim</td>
@@ -224,6 +235,7 @@
                     <tr>
                         <td>1</td>
                         <td>Rubens</td>
+                        <td>Masculino</td>
                         <td>02/01/2024</td>
                         <td>Nenhuma</td>
                         <td>Sim</td>
@@ -232,6 +244,7 @@
                     <tr>
                         <td>1</td>
                         <td>Rubens</td>
+                        <td>Masculino</td>
                         <td>02/01/2024</td>
                         <td>Nenhuma</td>
                         <td>Sim</td>
@@ -240,6 +253,7 @@
                     <tr>
                         <td>1</td>
                         <td>Rubens</td>
+                        <td>Masculino</td>
                         <td>02/01/2024</td>
                         <td>Nenhuma</td>
                         <td>Sim</td>
@@ -248,6 +262,7 @@
                     <tr>
                         <td>1</td>
                         <td>Rubens</td>
+                        <td>Masculino</td>
                         <td>02/01/2024</td>
                         <td>Nenhuma</td>
                         <td>Sim</td>
@@ -256,6 +271,7 @@
                     <tr>
                         <td>1</td>
                         <td>Rubens</td>
+                        <td>Masculino</td>
                         <td>02/01/2024</td>
                         <td>Nenhuma</td>
                         <td>Sim</td>
