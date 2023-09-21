@@ -50,12 +50,19 @@ input, select {
     border-radius: 2px;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.192);
     width: 100%;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 input:focus {
     outline: 2px solid #0d5788;
   }
+
+.form-sub-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 15px;
+}
 
 .btn-medicamento {
     background-color: #0d5788;
