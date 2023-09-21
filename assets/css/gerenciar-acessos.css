@@ -8,3 +8,111 @@
     width: 20px;
     font-size: 14px;
 }
+
+.section-cadastro, .section-relatorio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: baseline;
+    gap: 10px;
+    background-color: #2073aa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.11);
+    transition: all .3s ease-in-out;
+    color: white;
+    margin-top: 10px;
+}
+
+.section-relatorio {
+    background-color: #25a3d4;
+}
+
+.section-cadastro:hover, .section-relatorio:hover {
+    transform: scale(1.04);
+    transition: all .3s ease-in-out;
+}
+
+.section-title {
+    grid-column: span 2;
+    place-self: center;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.checkbox {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.checkbox input {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;  
+}
+
+.checkbox label {
+    position: relative;
+    padding-left: 2.2em;
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.checkbox label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 1.5em;
+    width: 1.5em;
+    background: #FFF;
+    margin-right: 0.5em;
+    border: 1px solid #999;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.checkbox label::after {
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    left: 0.75em;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    color: #FFF;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.checkbox label:focus::before, .checkbox label:hover::before {
+    background: #DDD;
+}
+
+.checkbox input:checked + label::before {
+    background: #06477c;
+    border-color: #06477c;
+}
+
+.checkbox input:checked + label::after {
+    opacity: 1;
+}
+
+@media (max-width: 500px) {
+    .form_medicamentos {
+        margin: 15px 10px;
+    }
+
+    .section-cadastro, .section-relatorio {
+        gap: 5px;
+        padding: 10px;
+    }
+}
