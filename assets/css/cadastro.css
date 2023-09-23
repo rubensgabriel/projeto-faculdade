@@ -188,7 +188,7 @@ main.table {
     visibility: visible;
 }
 
-.btn-edicao, .btn-exclusao {
+.btn-edicao, .btn-exclusao, .btn-cad-medicamento {
     padding: 8px;
     background-color: rgb(11, 96, 153);
     font-size: 20px;
@@ -205,6 +205,12 @@ main.table {
     transition: all .3s ease-in-out;
 }
 
+.btn-cad-medicamento {
+    background-color: rgb(236, 177, 15);
+    font-weight: lighter;
+    transition: all .3s ease-in-out;
+}
+
 .btn-edicao:hover {
     color: rgb(11, 96, 153);
     background-color: white;
@@ -218,6 +224,14 @@ main.table {
     box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.349) ;
     transition: all .3s ease-in-out;
     font-weight: bold;
+}
+
+.btn-cad-medicamento:hover {
+    color: rgb(236, 177, 15);
+    background-color: white;
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.349) ;
+    transition: all .3s ease-in-out;
+    
 }
 
 table {
