@@ -67,6 +67,21 @@
     font-size: 15px;
 }
 
+.buttons-edicao {
+    min-width: 172px;
+}
+
+.btn-observacao {
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(53, 147, 209);
+    font-weight: 200;
+    transition: all .3s ease-in-out;
+}
+
 @media (max-width: 1000px) {
     td:not(:first-of-type) {
         min-width: 11rem;
@@ -109,7 +124,7 @@
         place-items: center;
     }
 
-    #btn-pesquisa {
+    .btn-pesquisa {
         grid-column: 2;
         place-self: center;
         width: 100%;

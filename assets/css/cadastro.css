@@ -270,7 +270,7 @@ tbody > tr:nth-child(odd){
 }
 
 .buttons-edicao {
-    min-width: 172px;
+    min-width: 120px;
 }
 
 @media (max-width: 1000px) {
