@@ -2,7 +2,7 @@ main.table {
     height: fit-content;
 }
 
-#btn-cadastro {
+.btn-cadastro {
     background-color: #165986;
     box-sizing: border-box;
     border: none;
@@ -11,7 +11,7 @@ main.table {
     font-size: 15px;
     border-radius: 5px;
     margin-top: 18px;
-    margin-left: 2.5%;
+    margin-left: 1.6%;
     display: flex;
     font-weight: 600;
     cursor: pointer;
@@ -21,7 +21,7 @@ main.table {
     box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.349) ;
 }
 
-#btn-cadastro:hover {
+.btn-cadastro:hover {
     transform: scale(1.08);
     transition: all .3s ease-in-out;
     background-color: aliceblue;
@@ -54,7 +54,7 @@ td, th {
 }
 
 @media (max-width: 700px) {
-    #btn-cadastro {
+    .btn-cadastro {
         padding: 10px 15px;
         max-width: 130px;
     }

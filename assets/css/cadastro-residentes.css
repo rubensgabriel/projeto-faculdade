@@ -1,7 +1,7 @@
 .form_medicamentos .form-section {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
-    gap: 30px;
+    gap: 20px 30px;
     margin-bottom: 10px;
 }
 
@@ -32,8 +32,8 @@
 .dados-emergencia-input {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    padding: 15px 30px 45px;
+    gap: 20px 25px;
+    padding: 25px 30px 15px;
 }
 
 .dados-emergencia h3 {
@@ -47,7 +47,7 @@
 .dados-principais {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 
 .search-content {
@@ -65,6 +65,12 @@
     height: 38px;
     padding: 20px;
     font-size: 15px;
+}
+
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 11rem;
+    }
 }
 
 @media (max-width: 700px) {
@@ -131,5 +137,12 @@
 
     .btn-area {
         width: 70%;
+    }
+
+    .form-sub-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+        gap: 5px;
     }
 }
