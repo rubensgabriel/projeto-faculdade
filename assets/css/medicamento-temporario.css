@@ -1,0 +1,28 @@
+.form-header {
+    background-color: rgb(13, 172, 184);
+}
+
+.btn-medicamento {
+    background-color: rgb(13, 172, 184);
+}
+
+.btn-medicamento:hover {
+    color: rgb(13, 172, 184);
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+label, p {
+    color: rgb(10, 96, 102);
+}
+
+.complemento-input {
+    width: 160px;
+    box-sizing: border-box;
+    margin-top: 38px;
+    margin-bottom: 0;
+}
+
+.complemento-input p {
+    margin: 0;
+}

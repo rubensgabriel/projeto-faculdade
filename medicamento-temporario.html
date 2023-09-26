@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/novo-medicamento.css">
+    <link rel="stylesheet" href="assets/css/medicamento-temporario.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+        <div class="box">
+            <section class="form-header">
+                <h2>Medicamento Temporário <i class='bx bx-x btn-close' title="Fechar"></i></h2>      
+            </section>
+            <form action="" class="cadastro_medicamento">
+                <div class="form-section">
+                    <div class="input-area">
+                        <label id="medicamento">Medicamento</label>
+                        <select name="medicamento" id="medicamento">
+                            <option value="">Escolha uma opção</option>
+                            <option value="Dipirona">Dipirona</option>
+                            <option value="Omeprazol">Omeprazol</option>
+                        </select>
+                    </div>
+                    <div class="input-area">
+                        <label id="especificar">Especificar</label>
+                        <select name="especificar" id="especificar">
+                            <option value="">Escolha uma opção</option>
+                            <option value="Dipirona">Dipirona</option>
+                            <option value="Omeprazol">Omeprazol</option>
+                        </select>
+                    </div>
+                    <div class="form-sub-section">
+                        <div class="input-area">
+                            <label id="quantidade">Frequência</label>
+                            <input type="number" required placeholder="0">
+                        </div>
+                        <div class="complemento-input">
+                            <p id="vezes-dia">dias de uso</p>
+                        </div>
+                    </div>
+                    <div class="form-sub-section">
+                        <div class="input-area">
+                            <label id="quantidade">Quantidade</label>
+                            <input type="number" required placeholder="0">
+                        </div>
+                        <div class="input-area">
+                            <label id="vezes-dia">Vezes ao dia</label>
+                            <input type="number" required placeholder="0">
+                        </div>
+                    </div>
+                    <div class="input-area">
+                        <label id="observacoes" for="">Observações</label>
+                        <textarea name="" id="observacao" cols="30" rows="10" placeholder="Escreva algo aqui..."></textarea>
+                    </div>
+                    <div class="btn-area">
+                        <button class="btn-medicamento" type="submit">Cadastrar</button>
+                    </div>
+                </div>
+            </form>
+        </div>    
+    </main>
+</body>
+</html>

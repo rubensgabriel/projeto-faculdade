@@ -1,0 +1,107 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #76839162;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 320px;
+    background: #b2eef8;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-image: url(../img/login-bg.jpg);
+    
+}
+
+.form-header {
+    text-align: center;
+    background-color: #0d5788;
+    padding: 4px;
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+    font-size: 12px;
+    position: relative;
+}
+
+.btn-close {
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btn-close:hover {
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+    text-shadow: 5px 6px 7px black;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 25px;
+}
+
+.form-sub-section {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.btn-medicamento {
+    background-color: #0d5788;
+    border: none;
+    height: 40px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 15px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.247);
+    border-radius: 2px;
+    width: 100%;
+    font-size: 15px;
+    transition: all .3s ease-in-out;
+    margin-top: 5px;
+}
+
+.btn-medicamento:hover {
+    color: #0b4b75;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+input, select, textarea {
+    border: none;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 5px 8px;
+    border-radius: 2px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.192);
+    width: 100%;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 5px;
+}
+
+textarea {
+    height: 70px;
+    resize: none;
+}
+
+label {
+    font-size: 17px;
+    color: #082e47;
+    margin-bottom: 8px;
+}
