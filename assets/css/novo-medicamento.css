@@ -13,12 +13,11 @@ body {
 }
 
 .box {
-    width: 320px;
-    background: #b2eef8;
+    max-width: 380px;
+    background: #c1eaf1;
+    background: linear-gradient(#d4f2f7, #a9e4ee);
     border-radius: 5px;
     box-sizing: border-box;
-    background-image: url(../img/login-bg.jpg);
-    
 }
 
 .form-header {
@@ -51,7 +50,7 @@ body {
     flex-direction: column;
     gap: 10px;
     width: 100%;
-    padding: 25px;
+    padding: 20px 25px 25px;
 }
 
 .form-sub-section {
@@ -85,14 +84,21 @@ body {
 input, select, textarea {
     border: none;
     box-sizing: border-box;
-    height: 30px;
+    height: 29px;
     padding: 5px 8px;
     border-radius: 2px;
-    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.192);
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.13);
     width: 100%;
-    font-size: 15px;
+    font-size: 14px;
     background-color: rgb(255, 255, 255);
     margin-top: 5px;
+    outline: 1px solid rgb(169, 203, 221);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid rgb(11, 98, 148);
 }
 
 textarea {
@@ -101,7 +107,7 @@ textarea {
 }
 
 label {
-    font-size: 17px;
+    font-size: 15px;
     color: #082e47;
     margin-bottom: 8px;
 }

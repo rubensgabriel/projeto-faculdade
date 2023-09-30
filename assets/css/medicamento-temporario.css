@@ -16,6 +16,16 @@ label, p {
     color: rgb(10, 96, 102);
 }
 
+input, select, textarea {
+    outline: 1px solid rgb(169, 218, 221);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid rgb(13, 172, 184);
+}
+
 .complemento-input {
     width: 160px;
     box-sizing: border-box;
