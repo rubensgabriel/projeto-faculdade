@@ -40,6 +40,7 @@ label {
     font-size: 17px;
     color: #082e47;
     margin-bottom: 8px;
+    font-weight: 600;
 }
 
 input, select, textarea {
@@ -87,9 +88,9 @@ input:focus, select:focus, textarea:focus {
 main.table {
     margin: auto;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 10px;
     margin-bottom: 10px;
-    width: 82vw;
+    width: 85vw;
     height: fit-content;
     background-color: #fff5;
 
@@ -255,7 +256,6 @@ td{
 }
 
 thead th {
-    position: sticky;
     top: 0;
     left: 0;
     background-color: #165986;

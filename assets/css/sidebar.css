@@ -1,16 +1,17 @@
 /*======================== GOOGLE FONTS ========================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 
 /*======================== VARIABLES CSS ========================*/
 :root {
     --nav-width: 92px;
 
-    --first-color: #0c5df4;
-    --bg-color: #072238;
+    --first-color: #1a74b1;
+    --bg-color: #083553;
     --sub-color: #b6cefc;
     --white-color: #fff;
 
-    --body-font: 'Poppins', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
 
@@ -56,6 +57,13 @@ a {
     padding: 1.5rem 1.5rem 2rem;
     transition: .5s;
     z-index: var(--z-fixed);
+}
+
+@media (max-width: 500px) {
+    .l-navbar {
+        padding: 1.5rem 1rem 2rem;
+        width: 75px;
+    }
 }
 
 /*======================== NAV ========================*/
