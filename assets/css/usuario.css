@@ -1,6 +1,6 @@
 body {
     background: linear-gradient(#ffffff, #bbe2fa);
-
+    height: 100vh;
 }
 
 .dados-usuario {
@@ -9,7 +9,7 @@ body {
     border-left: 5px solid rgb(19, 61, 124);
     box-sizing: border-box;
     padding: 20px 0px 20px 25px;
-    margin-top: -10px;
+    
 }
 
 h1 {
