@@ -123,6 +123,7 @@ a {
 /*===================== ADD PADDING BODY =====================*/
 .body-pd {
     padding: 2rem 0 0 16rem;
+    height: 100vh;
 }
 
 @media (max-width: 500px) {
