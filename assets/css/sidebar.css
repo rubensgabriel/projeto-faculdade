@@ -125,6 +125,13 @@ a {
     padding: 2rem 0 0 16rem;
 }
 
+@media (max-width: 500px) {
+    .body-pd {
+        padding: 2rem 0 0 6.78rem;
+        background-color: rgb(197, 43, 43);
+    }
+}
+
 /*===================== ACTIVE LINKS MENU =====================*/
 .active {
     background-color: var(--first-color);
