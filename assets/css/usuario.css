@@ -1,0 +1,113 @@
+body {
+    background: linear-gradient(#ffffff, #bbe2fa);
+
+}
+
+.dados-usuario {
+    max-width: 420px;
+    margin: 0px auto 9px;
+    border-left: 5px solid rgb(19, 61, 124);
+    box-sizing: border-box;
+    padding: 20px 0px 20px 25px;
+    margin-top: -10px;
+}
+
+h1 {
+    color: #082e47;
+    margin-bottom: 15px;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 5px 0px 0px;
+}
+
+label {
+    font-size: 17px;
+    color: #082e47;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #082e47;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 5px 8px;
+    width: 100%;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #082e47;
+}
+
+.btn-area {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.btn-dados, .btn-senha {
+    background-color: #0d5788;
+    border: none;
+    height: 40px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 15px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.247);
+    border-radius: 2px;
+    width: 100%;
+    font-size: 15px;
+    transition: all .3s ease-in-out;
+    text-align: center;
+}
+
+.btn-senha {
+    background-color: #278fd4;
+}
+
+.btn-senha:hover {
+    color: #278fd4;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.btn-dados:hover {
+    color: #0b4b75;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+@media (max-width: 500px) {
+    .dados-usuario {
+        max-width: 420px;
+        margin-right: 10px;
+        margin-left: -15px;
+        padding: 20px 0px 20px 25px;
+        margin-top: -10px;
+    }
+    
+    .btn-area {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .dados-usuario {
+        padding-left: 15px;
+        padding-right: 0;
+    }
+
+    h1 {
+        font-size: 1.54rem;
+    }
+}
