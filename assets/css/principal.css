@@ -4,7 +4,7 @@ body {
 }
 
 .inicio-area {
-    margin: -50px auto 0px;
+    margin: -55px auto 0px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 85%;
@@ -66,19 +66,19 @@ body {
 }
 
 .dados-area {
-    margin: 60px auto;
+    margin: 50px auto;
     display: flex;
     justify-content: space-between;
-    width: 65%;
-    gap: 50px;
+    max-width: 850px;
+    gap: 40px;
 }
 
 .card-dados {
-    background-color: rgb(36, 126, 187);
-    width: 270px;
+    background-color: rgba(36, 127, 187, 0);
+    width: 250px;
     box-sizing: border-box;
     display: flex;
-    height: 100px;
+    height: 95px;
     padding: 18px 20px;
     border-radius: 10px;
     position: relative;
@@ -87,34 +87,36 @@ body {
     cursor: pointer;
     transition: .3s all ease-in-out;
     z-index: 2;
+    color: rgb(13, 63, 97);
+    font-size: 20px;
 }
 
 .card-dados-principal, .card-dados2 {
     position: absolute;
-    width: 270px;
+    min-width: 200px;
     background-color: rgb(227, 244, 255);
     top: -20px;
     left: -20px;
     z-index: -1;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.301);
     text-shadow: 10px 10px 15px rgba(0, 0, 0, 0.226);
 }
 
 .card-dados2 {
     top: -10px;
     left: -10px;
-    background-color: rgb(98, 205, 255);
+    background-color: rgb(31, 125, 187);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.301);
 }
 
 .card-dados-principal:hover {
     top: -10px;
     left: -10px;
-    background-color: rgb(145, 213, 245);
+    background-color: rgb(31, 125, 187);
+    color: white;
 }
 
 .card-info h2, .card-info p{
     margin: 0;
-    color: rgb(13, 63, 97);
     font-size: 20px;
 }
 
@@ -126,4 +128,56 @@ body {
 
 .img-exemplo {
     max-width: 80px;
+}
+
+@media (max-width: 1000px) {
+    .inicio-area {
+        margin: -15px auto 0px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .card-info h2, .card-info p{
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .dados-area {
+       gap: 30px;
+        max-width: 750px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-dados {
+        width: 230px;
+        height: 90px;
+        padding: 15px 12px;
+       
+        box-sizing: border-box;
+        cursor: pointer;
+        transition: .3s all ease-in-out;
+        z-index: 2;
+        color: rgb(13, 63, 97);
+        font-size: 15px;
+    }
+    
+    .card-dados-principal, .card-dados2 {
+        
+    }
+}
+
+@media (max-width: 600px) {
+    .inicio-area {
+        width: 95%;
+    }
+
+    .inicio-conteudo h1{
+        font-size: 2rem;
+    }
+    
+    .dados-area {
+        gap: 50px;
+    }
 }
