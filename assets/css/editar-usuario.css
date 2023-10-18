@@ -1,9 +1,11 @@
 @media (max-width: 700px) {
     .form_medicamentos {
-        margin: 20px 28px;
+        margin: 17px 22px;
     }
 
     .buttons-edicao {
         margin-top: 10px;
     }
+
+    
 }

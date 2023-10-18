@@ -63,4 +63,13 @@ td, th {
         font-size: 17px;
         padding: 7px;
     }
+
+    table {
+        padding: .6rem .5rem;
+    }
+
+    td {
+        padding: .3rem .4rem;
+        font-size: 14px;
+    }
 }
