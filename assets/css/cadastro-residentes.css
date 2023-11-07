@@ -115,8 +115,6 @@
     }
 
     .search-content {
-        background-color: #116ca8d3;
-        display: grid;
         grid-template-columns: 1fr .3fr;
         margin-top: 20px;
         padding: 20px 20px;
@@ -133,6 +131,10 @@
 }
 
 @media (max-width: 400px) {
+    .form_medicamentos {
+        margin: 15px 0px;
+    }
+
     .form_medicamentos .form-section {
         display: grid;
         grid-template-columns: 1fr;
@@ -159,5 +161,22 @@
         grid-template-columns: 1fr;
         justify-content: space-between;
         gap: 5px;
+    }
+
+    .search-content {
+        margin-top: 20px;
+        padding: 15px 10px;
+        gap: 15px;
+        place-items: center;
+    }
+
+    th, td {
+        padding: .1rem .7rem;
+    }
+
+    .btn-edicao, .btn-exclusao, .btn-cad-medicamento {
+        padding: 6px;
+        font-size: 20px;
+        margin-right: 5px;
     }
 }

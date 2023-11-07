@@ -1,6 +1,9 @@
 body {
     background: linear-gradient(#ffffff, #bbe2fa);
-    height: 100vh;
+}
+
+#body-pd {
+    
 }
 
 .inicio-area {
@@ -123,7 +126,7 @@ body {
 
 .card-info h2, .card-info p{
     margin: 0;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .card-info p{
