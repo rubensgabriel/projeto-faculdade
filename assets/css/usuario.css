@@ -5,7 +5,7 @@ body {
 
 .dados-usuario {
     max-width: 420px;
-    margin: 0px auto 9px;
+    margin: 20px auto 9px;
     border-left: 5px solid rgb(19, 61, 124);
     box-sizing: border-box;
     padding: 15px 0px 15px 25px;
