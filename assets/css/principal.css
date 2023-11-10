@@ -118,7 +118,7 @@ body {
 .card-dados-principal, .card-dados2 {
     position: absolute;
     min-width: 200px;
-    background-color: rgb(227, 244, 255);
+    background-color: rgb(242, 248, 253);
     top: -20px;
     left: -20px;
     z-index: -1;
