@@ -1,0 +1,71 @@
+main.table {
+    margin: 10px auto;
+    text-align: center;
+    max-width: 480px;
+    height: fit-content;
+}
+
+.form-sub-section {
+    display: grid;
+    grid-template-columns: 1fr .82fr;
+}
+
+.dados-emergencia, .dados-filiacao {
+    background-color: #155a88;
+    color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.24) ;
+    transition: all .3s ease-in-out;
+    grid-column: 2;
+    grid-row: 2 span / 1;
+    margin-top: 10px;
+}
+
+.dados-emergencia {
+    background-color: #219ccc;
+}
+
+.dados-emergencia-input, .dados-filiacao-input{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 15px;
+    padding: 15px 20px 20px;
+}
+
+.dados-filiacao-input {
+    grid-template-columns: 1fr;
+}
+
+.dados-emergencia-input label,
+.dados-filiacao-input label {
+    color: white;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+.obs-contato {
+    grid-column: span 2;
+}
+
+@media (max-width: 500px) {
+    main.table {
+        margin: 0px 0px 5px -20px;
+    }
+
+    .form_medicamentos {
+        margin: 17px;
+    }
+
+    .back-link {
+        position: absolute;
+        left: 10px;
+        top: -7px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+}
