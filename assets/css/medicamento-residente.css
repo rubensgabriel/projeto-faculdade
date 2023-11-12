@@ -6,7 +6,7 @@
     background-color: rgb(13, 172, 184);
 }
 
-.btn-edicao:hover {
+.table-2 .btn-edicao:hover {
     color: rgb(13, 172, 184);
     background-color: white;
     box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.349) ;
@@ -51,7 +51,7 @@
     margin-left: 1.5%;
     font-weight: 600;
     cursor: pointer;
-    max-width: 270px;
+    max-width: 290px;
     transition: all .3s ease-in-out;
     box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.267) ;
 }
@@ -81,7 +81,18 @@
     box-shadow: 5px 7px 9px rgba(0, 0, 0, 0.349) ;
 }
 
-@media (max-width: 540px) {
+.btn-observacao {
+    padding: 5px;
+    text-align: center;
+    font-size: 28px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(53, 147, 209);
+    font-weight: 200;
+    transition: all .3s ease-in-out;
+}
+
+@media (max-width: 650px) {
     .back-link {
         position: absolute;
         left: 0px;
@@ -92,17 +103,16 @@
         display: flex;
         flex-direction: column;
         place-items: center;
-        
     }
 
     .btn-cadastro {
         padding: 11px 5px;
-        width: 240px;
+        width: 270px;
     }
 
     h2 {
         font-size: 20px;
-        margin: 0px 15px;
+        margin: 0px 18px;
     }
 }
 
