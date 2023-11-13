@@ -60,7 +60,39 @@ textarea {
 
 input:focus, select:focus, textarea:focus {
     outline: 2px solid #0d5788;
-  }
+}
+
+.btn-adicao {
+    background-color: #165986;
+    box-sizing: border-box;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 18px;
+    margin-left: 1.6%;
+    display: flex;
+    font-weight: 600;
+    cursor: pointer;
+    max-width: fit-content;
+    transition: all .3s ease-in-out;
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.349) ;
+}
+
+.btn-adicao i {
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+.btn-adicao:hover {
+    transform: scale(1.06);
+    transition: all .3s ease-in-out;
+    background-color: aliceblue;
+    color: #165986;
+    box-shadow: 5px 7px 9px rgba(0, 0, 0, 0.349) ;
+}
 
 .form-sub-section {
     display: grid;
@@ -304,7 +336,6 @@ tbody > tr:nth-child(odd){
 @media (max-width: 700px) {
     main.table {
         margin-top: -5px;
-        border-radius: 0px;
     }
 
     .form_medicamentos {
@@ -342,6 +373,13 @@ tbody > tr:nth-child(odd){
 @media (max-width: 500px) {
     main.table {
         margin-left: -17px;
+        border-radius: 0px;
+    }
+
+    .btn-adicao {
+        margin: 18px auto;
+        padding: 11px 18px;
+        font-size: 14px;
     }
 
     label {
@@ -354,28 +392,6 @@ tbody > tr:nth-child(odd){
 
     input, select, textarea {
         font-size: 13px;
-    }
-
-    .input-area2 {
-        grid-column: span 2;
-    }
-
-    .input-area3 {
-        grid-row: 3;
-        grid-column: 3;
-    }
-
-    .input-area4 {
-        grid-row: 3;
-        grid-column: span 2;
-        gap: 10px;
-    }
-
-    .btn-area {
-        grid-row: 4;
-        grid-column: 3 span / 4;
-        align-self: flex-end;
-        margin: 15px 0px 0px;
     }
 
     th {
