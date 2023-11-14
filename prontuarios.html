@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/cadastro.css">
     <link rel="stylesheet" href="assets/css/cadastro-residentes.css">
     <link rel="stylesheet" href="assets/css/sidebar.css">
+
     <title>Sistema Médico</title>
 </head>
 <body id="body-pd">
@@ -34,7 +35,7 @@
                         <span class="nav__name">Início</span>
                     </a>
 
-                    <div class="nav__link collapse active">
+                    <div class="nav__link collapse">
                         <ion-icon name="folder-outline" class="nav__icon"></ion-icon>
                         <span class="nav__name">Cadastro</span>
 
@@ -47,7 +48,7 @@
                         </ul>
                     </div>
 
-                    <a href="prontuarios.html" class="nav__link">
+                    <a href="prontuarios.html" class="nav__link active">
                         <i class="ri-heart-pulse-line nav__icon"></i>
                         <span class="nav__name">Prontuários</span>
                     </a>
@@ -87,7 +88,6 @@
         <section class="table__header">
             <h2>Residentes Cadastrados</h1>
         </section>
-        <a class="btn-adicao" href="novo-residente.html">Novo Residente <i class="ri-add-fill"></i></a>
         <section class="search-content">
             <input class="search-input" type="text" placeholder="Pesquisar...">
             <button class="btn-pesquisa">Pesquisar</button>
@@ -116,9 +116,9 @@
                         <td>Rubens</td>
                         <td>24/09/2023</td>
                         <td class="buttons-edicao">
-                            <a href="novo-residente.html"><i class='bx bxs-pencil btn-edicao' title="Editar Informações"></i></a>
-                            <a href="periodo.html"><i class='bx bx-add-to-queue btn-cad-medicamento' title="Cadastrar Medicamentos para o Residente"></i></a>
-                            <i class='bx bx-message-square-x btn-exclusao' title="Remover Residente"></i>
+                            <i class="ri-survey-line btn-cad-medicamento"></i>
+                            <i class="ri-heart-pulse-line btn-exclusao"></i>
+                            <i class="ri-printer-fill btn-edicao" title="Gerar Prontuário"></i>
                         </td>
                     </tr>
                     <tr>
@@ -148,6 +148,7 @@
                         <td class="buttons-edicao">
                             <a href="novo-residente.html"><i class='bx bxs-pencil btn-edicao' title="Editar Informações"></i></a>
                             <a href="periodo.html"><i class='bx bx-add-to-queue btn-cad-medicamento' title="Cadastrar Medicamentos para o Residente"></i></a>
+                            
                             <i class='bx bx-message-square-x btn-exclusao' title="Remover Residente"></i>
                         </td>
                     </tr>
