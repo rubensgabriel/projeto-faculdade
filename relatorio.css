@@ -8,7 +8,21 @@
     justify-items: baseline;
     gap: 10px;
     background-color: #2073aa;
-    padding: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.11);
+    transition: all .3s ease-in-out;
+    color: white;
+    margin-top: 10px;
+}
+
+.section-periodo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: baseline;
+    gap: 10px;
+    background-color: #2073aa;
+    padding: 15px;
     border-radius: 5px;
     box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.11);
     transition: all .3s ease-in-out;
@@ -21,6 +35,14 @@
     place-self: center;
     color: #ffffff;
     margin-top: 5px;
+}
+
+.section-periodo .section-title {
+    margin: 0px;
+}
+
+.section-periodo label {
+    color: #FFF;
 }
 
 .checkbox {

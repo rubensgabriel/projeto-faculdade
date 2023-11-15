@@ -13,9 +13,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/cadastro.css">
-    <link rel="stylesheet" href="assets/css/cadastro-residentes.css">
+    <link rel="stylesheet" href="assets/css/novo-usuario.css">
+    <link rel="stylesheet" href="relatorio.css">
     <link rel="stylesheet" href="assets/css/sidebar.css">
-
     <title>Sistema Médico</title>
 </head>
 <body id="body-pd">
@@ -32,7 +32,7 @@
                         <span class="nav__name">Início</span>
                     </a>
 
-                    <div class="nav__link collapse">
+                    <div class="nav__link collapse active">
                         <ion-icon name="folder-outline" class="nav__icon"></ion-icon>
                         <span class="nav__name">Cadastro</span>
 
@@ -55,7 +55,7 @@
                         <span class="nav__name">Histórico</span>
                     </a>
 
-                    <div class="nav__link collapse active">
+                    <div class="nav__link collapse">
                         <ion-icon name="reader-outline" class="nav__icon"></ion-icon>
                         <span class="nav__name">Relatórios</span>
 
@@ -80,6 +80,107 @@
             </a>
         </nav>
     </div>
+
+    <main class="table">
+        <section class="table__header">
+            <h2>Relatório de Medicamentos</h1>
+        </section>
+        <form action="" class="cadastro_medicamento">
+            <section class="form_medicamentos">
+                <div class="form-section">
+                    <div class="input-area">
+                        <label id="residente" for="">Medicamento</label>
+                        <select name="residente" id="residente">
+                            <option value="Todos">Todos</option>
+                            <option value="Omeprazol">Omeprazol</option>
+                            <option value="Dipirona">Dipirona</option>
+                            <option value="Paracetamol">Paracetamol</option>
+                        </select>
+                    </div>
+                    <div class="form-sub-section">
+                        <div class="input-area">
+                            <label id="validade">Validade</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="input-area">
+                            <label id="origem">Origem</label>
+                            <select name="origem" id="origem">
+                                <option value="">Escolha uma opção</option>
+                                <option value="Doação">Doação</option>
+                                <option value="Comprado">Comprado</option>
+                                <option value="Governo">Governo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="section-periodo">
+                        <h3 class="section-title">Período</h3>
+                        <div class="input-area">
+                            <label id="periodo-inicial">De</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="input-area">
+                            <label id="periodo-final">Até</label>
+                            <input type="date" required>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <button class="btn-medicamento" type="submit">Gerar Relatório</button>
+                    </div>
+                    <div class="section-dados">
+                        <h3 class="section-title">Informações que estarão contidas</h3>
+                        <div class="checkbox">
+                            <input type="checkbox" id="chk1" class="checkbox" name="chk">
+                            <label for="chk1">
+                            Custo
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="chk2" class="checkbox" name="chk">
+                            <label for="chk2">
+                            Doses/Cápsulas
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="chk3" class="checkbox" name="chk">
+                            <label for="chk3">
+                            Lote
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="chk4" class="checkbox" name="chk">
+                            <label for="chk4">
+                            mg/ml
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="chk5" class="checkbox" name="chk">
+                            <label for="chk5">
+                            Observações
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="chk6" class="checkbox" name="chk">
+                            <label for="chk6">
+                            Origem
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="chk7" class="checkbox" name="chk">
+                            <label for="chk7">
+                            Quantidade
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="chk8" class="checkbox" name="chk">
+                            <label for="chk8">
+                            Validade
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </main>
     
     <!--Menu -->
     <script src="assets/js/sidebar.js"></script>
