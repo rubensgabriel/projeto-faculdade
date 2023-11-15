@@ -1,4 +1,8 @@
-.section-cadastro, .section-relatorio {
+.form-sub-section {
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-dados {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: baseline;
@@ -12,15 +16,6 @@
     margin-top: 10px;
 }
 
-.section-relatorio {
-    background-color: #25a3d4;
-}
-
-.section-cadastro:hover, .section-relatorio:hover {
-    transform: scale(1.04);
-    transition: all .3s ease-in-out;
-}
-
 .section-title {
     grid-column: span 2;
     place-self: center;
@@ -31,6 +26,10 @@
 .checkbox {
     display: inline-block;
     vertical-align: middle;
+}
+
+.checkbox2 {
+    grid-column: span 2;
 }
 
 .checkbox input {
@@ -106,7 +105,7 @@
         margin: 15px 10px;
     }
 
-    .section-cadastro, .section-relatorio {
+    .section-dados {
         gap: 5px;
         padding: 10px;
     }
