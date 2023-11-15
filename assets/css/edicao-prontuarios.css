@@ -1,0 +1,38 @@
+.btn-back {
+    color: white;
+    padding: 8px;
+    font-size: 25px;
+    margin-top: 12px;
+    align-self: flex-start;
+    transition: all .3s ease-in-out;
+}
+
+.btn-back:hover {
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+    text-shadow: 5px 6px 7px black;
+}
+
+.back-link {
+    position: absolute;
+    left: 18px;
+    top: -6px;
+}
+
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 5rem;
+    }
+
+    td.buttons-edicao {
+        min-width: 160px;
+    }
+}
+
+@media (max-width: 500px) {
+    .back-link {
+        position: absolute;
+        left: 2px;
+        top: -7px;
+    }
+}

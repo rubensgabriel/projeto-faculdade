@@ -1,0 +1,85 @@
+main.table {
+    max-width: 530px;
+}
+
+section.form_medicamentos {
+    margin: 15px;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(42, 121, 173);
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.26);
+}
+
+.principal-section {
+    display: flex;
+    gap: 8px;
+}
+
+.input-area2 {
+    display: flex;
+    gap: 7px;
+    align-items: flex-end;
+    color: white;
+}
+
+.input-area2 label{
+    margin-bottom: 0;
+    color: white;
+}
+
+input.dados-cabecalho {
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom: 2px rgb(252, 252, 252) solid;
+    border-radius: 0;
+    padding: 0;
+    font-size: 16px;
+    align-self: flex-end;
+    height: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+
+input:focus {
+    outline: none;
+}
+
+.form-sub-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.form-sub-section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.form-sub-section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+@media (max-width: 560px) {
+    .principal-section {
+        flex-direction: column;
+    }
+
+    .dados-cabecalho {
+        font-size: 15px;
+    }
+
+    .cabecalho {
+        padding: 15px;
+    }
+}
+

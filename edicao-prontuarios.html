@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- REMIX ICON -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--IONICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+    <link rel="stylesheet" href="assets/css/edicao-prontuarios.css">
+    <link rel="stylesheet" href="assets/css/sidebar.css">
+
+    <link rel="shortcut icon" href="assets/img/casa-de-repouso3.png" type="image/x-icon">
+
+    <title>Sistema Médico</title>
+</head>
+<body id="body-pd">
+    <div class="l-navbar" id="navbar">
+        <nav class="nav">
+            <div>
+                <div class="nav__brand">
+                    <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
+                    <a href="#" class="nav__logo">Rubens</a>
+                </div>
+                <div class="nav__list">
+                    <a href="principal.html" class="nav__link">
+                        <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+                        <span class="nav__name">Início</span>
+                    </a>
+
+                    <div class="nav__link collapse">
+                        <ion-icon name="folder-outline" class="nav__icon"></ion-icon>
+                        <span class="nav__name">Cadastro</span>
+
+                        <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+
+                        <ul class="collapse__menu">
+                            <a href="cadastro-usuario.html" class="collapse__sublink">Usuários</a>
+                            <a href="residentes.html" class="collapse__sublink">Residentes</a>
+                            <a href="medicamentos.html" class="collapse__sublink">Medicamentos</a>
+                        </ul>
+                    </div>
+
+                    <a href="prontuarios.html" class="nav__link active">
+                        <i class="ri-heart-pulse-line nav__icon"></i>
+                        <span class="nav__name">Prontuários</span>
+                    </a>
+
+                    <a href="historico.html" class="nav__link">
+                        <ion-icon name="time-outline" class="nav__icon"></ion-icon>
+                        <span class="nav__name">Histórico</span>
+                    </a>
+
+                    <div class="nav__link collapse">
+                        <ion-icon name="reader-outline" class="nav__icon"></ion-icon>
+                        <span class="nav__name">Relatórios</span>
+
+                        <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+
+                        <ul class="collapse__menu">
+                            <a href="relatorio-residentes.html" class="collapse__sublink">Residentes</a>
+                            <a href="relatorio-medicamentos.html" class="collapse__sublink">Medicamentos</a>
+                        </ul>
+                    </div>
+
+                    <a href="usuario.html" class="nav__link">
+                        <ion-icon name="settings-outline" class="nav__icon"></ion-icon>
+                        <span class="nav__name">Conta</span>
+                    </a>
+                </div>
+            </div>
+
+            <a href="index.html" class="nav__link">
+                <ion-icon name="log-out-outline" class="nav__icon"></ion-icon>
+                <span class="nav__name">Log Out</span>
+            </a>
+        </nav>
+    </div>
+
+    <main class="table">
+        <section class="table__header">
+            <h2>Residentes Cadastrados</h1>
+        </section>
+        <a class="back-link" href="prontuarios.html" title="Voltar"><i class='bx bx-arrow-back btn-back'></i></a>
+        <a class="btn-adicao" href="novo-prontuario.html">Novo Registro <i class="ri-add-fill"></i></a>
+        <section class="table__body">
+            <table>
+                <thead>
+                     <th scope="col">ID</th>
+                     <th scope="col">Médico</th>
+                     <th scope="col">Hora</th>
+                     <th scope="col">Data</th>
+                     <th scope="col">PA</th>
+                     <th scope="col">T</th>
+                     <th scope="col">P</th>
+                     <th scope="col">R</th>
+                     <th scope="col">Observações</th>
+                     <th scope="col"></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="buttons-edicao">Rubens Rodrigues</td>
+                        <td>12:45</td>
+                        <td>02/01/2024</td>
+                        <td>21</td>
+                        <td>1</td>
+                        <td>15</td>
+                        <td>3</td>
+                        <td><i class='bx bx-info-circle btn-observacao' title="Apresenta um machucado na perna"></i></td>
+                        <td class="buttons-edicao"><i class='bx bxs-pencil btn-edicao' title="Editar Informações"></i><i class='bx bx-message-square-x btn-exclusao' title="Remover Registro"></i></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rubens Rodrigues</td>
+                        <td>12:45</td>
+                        <td>02/01/2024</td>
+                        <td>22</td>
+                        <td>1</td>
+                        <td>15</td>
+                        <td>3</td>
+                        <td><i class='bx bx-info-circle btn-observacao' title="Apresenta um machucado na perna"></i></td>
+                        <td class="buttons-edicao"><i class='bx bxs-pencil btn-edicao' title="Editar Informações"></i><i class='bx bx-message-square-x btn-exclusao' title="Remover Registro"></i></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rubens Rodrigues</td>
+                        <td>12:45</td>
+                        <td>02/01/2024</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>15</td>
+                        <td>3</td>
+                        <td><i class='bx bx-info-circle btn-observacao' title="Apresenta um machucado na perna"></i></td>
+                        <td class="buttons-edicao"><i class='bx bxs-pencil btn-edicao' title="Editar Informações"></i><i class='bx bx-message-square-x btn-exclusao' title="Remover Registro"></i></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rubens Rodrigues</td>
+                        <td>12:45</td>
+                        <td>02/01/2024</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>15</td>
+                        <td>3</td>
+                        <td><i class='bx bx-info-circle btn-observacao' title="Apresenta um machucado na perna"></i></td>
+                        <td class="buttons-edicao"><i class='bx bxs-pencil btn-edicao' title="Editar Informações"></i><i class='bx bx-message-square-x btn-exclusao' title="Remover Registro"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!--Menu -->
+    <script src="assets/js/sidebar.js"></script>
+</body>
+</html>

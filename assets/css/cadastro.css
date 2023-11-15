@@ -98,7 +98,14 @@ input:focus, select:focus, textarea:focus {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    gap: 15px;
+    gap: 13px;
+}
+
+.form-sub-section2 {
+    display: grid;
+    grid-template-columns: 1fr .5fr .5fr .5fr;
+    justify-content: space-between;
+    gap: 13px;
 }
 
 .btn-medicamento {
@@ -302,6 +309,18 @@ tbody > tr:nth-child(odd){
     min-width: 120px;
 }
 
+.btn-observacao {
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(53, 147, 209);
+    font-weight: 200;
+    transition: all .3s ease-in-out;
+}
+
+
 @media (max-width: 1000px) {
     .form_medicamentos {
         margin: 15px;
@@ -335,18 +354,7 @@ tbody > tr:nth-child(odd){
 
 @media (max-width: 700px) {
     main.table {
-        margin-top: -5px;
-    }
-
-    .form_medicamentos {
-        margin: 15px 10px;
-    }
-
-    .form_medicamentos .form-section {
-        display: grid;
-        grid-template-columns: 1.2fr 1fr 1fr;
-        gap: 10px;
-        margin-bottom: 8px;
+        margin-top: 0;
     }
 
     .filter-content {
@@ -367,7 +375,6 @@ tbody > tr:nth-child(odd){
         margin-top: 10px;
         place-self: center;
     }
-
 }
 
 @media (max-width: 500px) {

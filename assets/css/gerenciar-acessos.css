@@ -68,8 +68,8 @@
     content: "";
     display: inline-block;
     vertical-align: middle;
-    height: 1.5em;
-    width: 1.5em;
+    height: 1.4em;
+    width: 1.4em;
     background: #FFF;
     margin-right: 0.5em;
     border: 1px solid #999;
@@ -106,6 +106,12 @@
     opacity: 1;
 }
 
+@media (max-width: 1000px) {
+    label {
+        font-size: 17px;
+    }
+}
+
 @media (max-width: 500px) {
     .form_medicamentos {
         margin: 15px 10px;
@@ -114,5 +120,9 @@
     .section-cadastro, .section-relatorio {
         gap: 5px;
         padding: 10px;
+    }
+
+    label {
+        font-size: 15px;
     }
 }

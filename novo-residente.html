@@ -96,6 +96,7 @@
                         <label id="nome" >Nome Completo</label>
                         <input type="text" required placeholder="">
                     </div>
+                    
                     <div class="form-sub-section">
                         <div class="input-area">
                             <label id="estado-civil" for="">Estado Civil</label>
@@ -112,6 +113,7 @@
                             <input type="text" required placeholder="">
                         </div>
                     </div>
+                    
                     <div class="form-sub-section">
                         <div class="input-area">
                             <label id="date">Data de Nascimento</label>
@@ -125,15 +127,47 @@
                                 <option value="Feminino">Feminino</option>
                             </select>
                         </div>
+                        
                         <div class="input-area">
-                            <label id="identidade">Identidade</label>
-                            <input type="text" required placeholder="UF-222222">
+                            <label id="sangue" for="">Tipo Sanguíneo</label>
+                            <select name="sangue" id="sangue">
+                                <option value="">Escolha uma opção</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
                         </div>
                         <div class="input-area">
                             <label id="CPF">CPF</label>
                             <input type="text" required placeholder="888.888.888-88">
                         </div>
                     </div>
+
+                    <div class="form-sub-section2">
+                        <div class="input-area">
+                            <label id="identidade">Identidade</label>
+                            <input type="text" required placeholder="UF-222222">
+                        </div>
+                        
+                        <div class="input-area">
+                            <label id="andar">Andar</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="input-area">
+                            <label id="quarto">Quarto</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="input-area">
+                            <label id="leito">Leito</label>
+                            <input type="text" required>
+                        </div>
+                    </div>
+
                     <div class="input-area">
                         <label id="condicao" for="">Observações</label>
                         <textarea name="" id="observacao" cols="30" rows="10" placeholder="Escreva algo aqui..."></textarea>
