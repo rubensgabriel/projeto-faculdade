@@ -1,0 +1,13 @@
+.form-sub-section {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    gap: 8px;
+}
+
+.principal-section {
+    flex-direction: column;
+}
+
+main.table {
+    max-width: 500px;
+}
