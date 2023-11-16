@@ -16,7 +16,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/cadastro.css">
-    <link rel="stylesheet" href="assets/css/cadastro-residentes.css">
+    <link rel="stylesheet" href="assets/css/historico.css">
     <link rel="stylesheet" href="assets/css/sidebar.css">
 
     <title>Sistema Médico</title>
@@ -86,176 +86,80 @@
 
     <main class="table">
         <section class="table__header">
-            <h2>Residentes Cadastrados</h1>
+            <h2>Histórico de Alterações</h2>
         </section>
-        <section class="search-content">
-            <input class="search-input" type="text" placeholder="Pesquisar...">
+        <section class="filter-content">
+            <div class="input-area input-area2">
+                <label for="">Conteúdo</label>
+                <select name="medicamento" id="medicamento">
+                    <option value="Tudo">Tudo</option>
+                    <option value="Residentes">Residentes</option>
+                    <option value="Medicamentos">Medicamentos</option>
+                    <option value="Usuários">Usuários</option>
+                    <option value="Usuários">Prontuários</option>
+                    <option value="Usuários">Evolução Clínica</option>
+                </select>
+            </div>
+            <div class="input-area">
+                <label id="periodo-inicial" for="">De</label>
+                <input type="date" required placeholder="00/00/0000">
+            </div>
+            <div class="input-area">
+                <label id="periodo-final" for="">Até</label>
+                <input type="date" required placeholder="00/00/0000">
+            </div>
             <button class="btn-pesquisa">Pesquisar</button>
         </section>
         <section class="table__body">
             <table>
                 <thead>
                      <th scope="col">ID</th>
-                     <th scope="col">Residente</th>
-                     <th scope="col">Sexo</th>
-                     <th scope="col">Data de Nascimento</th>
-                     <th scope="col">Observações</th>
-                     <th scope="col">Contato de Emergência</th>
-                     <th scope="col">Usuário</th>
-                     <th scope="col">Data de Inclusão</th>
+                     <th scope="col" class="dados-alteracao">Ação</th>
                      <th scope="col"></th>
+                     <th scope="col">Data</th>
+                     <th scope="col">Horário</th>
+                     <th scope="col">Motivo</th>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Rubens Rodrigues</td>
-                        <td>Masculino</td>
+                        <td >Rubens alterou os dados de um medicamento</td>
+                        <td><i class="ri-pencil-fill acao-editar" title="Editado"></i></td>
                         <td>02/01/2024</td>
+                        <td>15:36</td>
                         <td><i class='bx bx-info-circle btn-observacao' title="Apresenta um machucado na perna"></i></td>
-                        <td>Sim</td>
-                        <td>Rubens</td>
-                        <td>24/09/2023</td>
-                        <td class="buttons-edicao">
-                            <i class="ri-survey-line btn-cad-medicamento"></i>
-                            <i class="ri-heart-pulse-line btn-exclusao"></i>
-                            <i class="ri-printer-fill btn-edicao" title="Gerar Prontuário"></i>
-                        </td>
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>Rubens Rodrigues</td>
-                        <td>Masculino</td>
+                        <td>Vitoria removeu um residente</td>
+                        <td><i class="ri-delete-bin-5-fill acao-apagar" title="Removido"></i></td>
                         <td>02/01/2024</td>
+                        <td>15:36</td>
                         <td><i class='bx bx-info-circle btn-observacao' title="Apresenta um machucado na perna"></i></td>
-                        <td>Sim</td>
-                        <td>Rubens</td>
-                        <td>24/09/2023</td>
-                        <td class="buttons-edicao">
-                            <a href="novo-residente.html"><i class='bx bxs-pencil btn-edicao' title="Editar Informações"></i></a>
-                            <a href="periodo.html"><i class='bx bx-add-to-queue btn-cad-medicamento' title="Cadastrar Medicamentos para o Residente"></i></a>
-                            <i class='bx bx-message-square-x btn-exclusao' title="Remover Residente"></i>
-                        </td>
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>Rubens Rodrigues</td>
-                        <td>Masculino</td>
+                        <td>Rubens cadastrou um residente</td>
+                        <td><i class="ri-add-line acao-adicionar" title="Adicionado"></i></td>
                         <td>02/01/2024</td>
+                        <td>15:36</td>
                         <td><i class='bx bx-info-circle btn-observacao' title="Apresenta um machucado na perna"></i></td>
-                        <td>Sim</td>
-                        <td>Rubens</td>
-                        <td>24/09/2023</td>
-                        <td class="buttons-edicao">
-                            <a href="novo-residente.html"><i class='bx bxs-pencil btn-edicao' title="Editar Informações"></i></a>
-                            <a href="periodo.html"><i class='bx bx-add-to-queue btn-cad-medicamento' title="Cadastrar Medicamentos para o Residente"></i></a>
-                            
-                            <i class='bx bx-message-square-x btn-exclusao' title="Remover Residente"></i>
-                        </td>
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>Rubens Rodrigues</td>
-                        <td>Masculino</td>
+                        <td>Thulio cadastrou um medicamento</td>
+                        <td><i class="ri-add-line acao-adicionar" title="Adicionado"></i></td>
                         <td>02/01/2024</td>
+                        <td>15:36</td>
                         <td><i class='bx bx-info-circle btn-observacao' title="Apresenta um machucado na perna"></i></td>
-                        <td>Sim</td>
-                        <td>Rubens</td>
-                        <td>24/09/2023</td>
-                        <td class="buttons-edicao">
-                            <a href="novo-residente.html"><i class='bx bxs-pencil btn-edicao' title="Editar Informações"></i></a>
-                            <a href="periodo.html"><i class='bx bx-add-to-queue btn-cad-medicamento' title="Cadastrar Medicamentos para o Residente"></i></a>
-                            <i class='bx bx-message-square-x btn-exclusao' title="Remover Residente"></i>
-                        </td>
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>Rubens Rodrigues</td>
-                        <td>Masculino</td>
+                        <td>Thulio removeu um registro de evolução clinica</td>
+                        <td><i class="ri-delete-bin-5-fill acao-apagar" title="Removido"></i></td>
                         <td>02/01/2024</td>
+                        <td>15:36</td>
                         <td><i class='bx bx-info-circle btn-observacao' title="Apresenta um machucado na perna"></i></td>
-                        <td>Sim</td>
-                        <td>Rubens</td>
-                        <td>24/09/2023</td>
-                        <td class="buttons-edicao">
-                            <a href="novo-residente.html"><i class='bx bxs-pencil btn-edicao' title="Editar Informações"></i></a>
-                            <a href="periodo.html"><i class='bx bx-add-to-queue btn-cad-medicamento' title="Cadastrar Medicamentos para o Residente"></i></a>
-                            <i class='bx bx-message-square-x btn-exclusao' title="Remover Residente"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Rubens Rodrigues</td>
-                        <td>Masculino</td>
-                        <td>02/01/2024</td>
-                        <td><i class='bx bx-info-circle btn-observacao' title="Apresenta um machucado na perna"></i></td>
-                        <td>Sim</td>
-                        <td>Rubens</td>
-                        <td>24/09/2023</td>
-                        <td class="buttons-edicao">
-                            <a href="novo-residente.html"><i class='bx bxs-pencil btn-edicao' title="Editar Informações"></i></a>
-                            <a href="periodo.html"><i class='bx bx-add-to-queue btn-cad-medicamento' title="Cadastrar Medicamentos para o Residente"></i></a>
-                            <i class='bx bx-message-square-x btn-exclusao' title="Remover Residente"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Rubens Rodrigues</td>
-                        <td>Masculino</td>
-                        <td>02/01/2024</td>
-                        <td><i class='bx bx-info-circle btn-observacao' title="Apresenta um machucado na perna"></i></td>
-                        <td>Sim</td>
-                        <td>Rubens</td>
-                        <td>24/09/2023</td>
-                        <td class="buttons-edicao">
-                            <a href="novo-residente.html"><i class='bx bxs-pencil btn-edicao' title="Editar Informações"></i></a>
-                            <a href="periodo.html"><i class='bx bx-add-to-queue btn-cad-medicamento' title="Cadastrar Medicamentos para o Residente"></i></a>
-                            <i class='bx bx-message-square-x btn-exclusao' title="Remover Residente"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Rubens Rodrigues</td>
-                        <td>Masculino</td>
-                        <td>02/01/2024</td>
-                        <td><i class='bx bx-info-circle btn-observacao' title="Apresenta um machucado na perna"></i></td>
-                        <td>Sim</td>
-                        <td>Rubens</td>
-                        <td>24/09/2023</td>
-                        <td class="buttons-edicao">
-                            <a href="novo-residente.html"><i class='bx bxs-pencil btn-edicao' title="Editar Informações"></i></a>
-                            <a href="periodo.html"><i class='bx bx-add-to-queue btn-cad-medicamento' title="Cadastrar Medicamentos para o Residente"></i></a>
-                            <i class='bx bx-message-square-x btn-exclusao' title="Remover Residente"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Rubens Rodrigues</td>
-                        <td>Masculino</td>
-                        <td>02/01/2024</td>
-                        <td><i class='bx bx-info-circle btn-observacao' title="Apresenta um machucado na perna"></i></td>
-                        <td>Sim</td>
-                        <td>Rubens</td>
-                        <td>24/09/2023</td>
-                        <td class="buttons-edicao">
-                            <a href="novo-residente.html"><i class='bx bxs-pencil btn-edicao' title="Editar Informações"></i></a>
-                            <a href="periodo.html"><i class='bx bx-add-to-queue btn-cad-medicamento' title="Cadastrar Medicamentos para o Residente"></i></a>
-                            <i class='bx bx-message-square-x btn-exclusao' title="Remover Residente"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Rubens Rodrigues</td>
-                        <td>Masculino</td>
-                        <td>02/01/2024</td>
-                        <td><i class='bx bx-info-circle btn-observacao' title="Apresenta um machucado na perna"></i></td>
-                        <td>Sim</td>
-                        <td>Rubens</td>
-                        <td>24/09/2023</td>
-                        <td class="buttons-edicao">
-                            <a href="novo-residente.html"><i class='bx bxs-pencil btn-edicao' title="Editar Informações"></i></a>
-                            <a href="periodo.html"><i class='bx bx-add-to-queue btn-cad-medicamento' title="Cadastrar Medicamentos para o Residente"></i></a>
-                            <i class='bx bx-message-square-x btn-exclusao' title="Remover Residente"></i>
-                        </td>
                     </tr>
                 </tbody>
             </table>

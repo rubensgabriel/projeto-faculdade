@@ -1,0 +1,71 @@
+.filter-content {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1fr .7fr;
+    justify-content: center;
+    align-content: center;
+    place-content: center;
+    margin: 20px 0px 0px;
+    background-color: #1a74b1;
+    padding: 10px 150px 20px;
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.178) ;
+    gap: 20px;
+}
+
+.acao-editar {
+    color: rgb(11, 96, 153);
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+
+.acao-adicionar {
+    color: rgb(12, 145, 45);
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+
+.acao-apagar {
+    color: rgb(196, 1, 1);;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+
+@media (max-width: 1000px) {
+    .filter-content {
+        padding: 18px 25px;
+        gap: 10px 15px;
+    }
+
+    td:not(:first-of-type) {
+        min-width: 5rem;
+    }
+
+    th.dados-alteracao {
+        min-width: 25rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .filter-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 15px;
+    }
+
+    .input-area2 {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 500px) {
+    input, select {
+        font-size: 15px;
+    }
+}
