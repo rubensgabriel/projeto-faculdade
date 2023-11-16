@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-body {
-    background: linear-gradient(#ffffff, #bbe2fa);
-    min-height: 100vh;
-}
-
 .inicio-area {
     margin: 0 auto;
     display: grid;
@@ -92,12 +87,12 @@ body {
     display: flex;
     justify-content: space-between;
     max-width: 850px;
-    gap: 70px;
+    gap: 60px;
 }
 
 .card-dados {
     background-color: rgba(36, 127, 187, 0);
-    width: 250px;
+    width: 240px;
     box-sizing: border-box;
     display: flex;
     text-align: center;
@@ -141,7 +136,7 @@ body {
 
 .card-info h2, .card-info p{
     margin: 0;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -150,6 +145,114 @@ body {
     font-size: 21px;
     font-weight: 400;
 }
+
+.section-dados1 {
+    background: linear-gradient(#ffffff, #a9d8f5);  
+}
+
+.section-dados2 {
+    background-color: rgb(7, 56, 88);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.section-dados3 {
+    background: linear-gradient(#ffffff, #bbe2fa);
+    height: 600px; 
+}
+
+.table__body {
+    background-color: #fffb;
+    margin: 0;
+    border-radius: .6rem;
+    overflow: auto;
+    max-width: 500px;
+}
+
+.table__body::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table__body::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.table__body:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+table {
+    width: 100%;
+    font-size: 15px;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    padding: .9rem .7rem;
+    text-align: left;
+}
+
+td{
+    width: max-content;
+    padding: .6em .7em;
+}
+
+thead th {
+    top: 0;
+    left: 0;
+    background-color: rgb(16, 113, 177);
+    color: rgb(255, 255, 255);
+}
+
+tbody > tr:nth-child(even){
+    background-color: #ffffffb4;
+}
+
+tbody > tr:nth-child(odd){
+    background-color: rgba(255, 255, 255, 0.966);
+}
+
+.alert1 {
+    font-size: 25px;
+    color: rgb(236, 177, 15);
+}
+
+.alert2 {
+    font-size: 25px;
+    color: rgb(196, 1, 1);
+}
+
+.header-reminders {
+    background-color: blue;
+    padding: 0;
+}
+
+.reminders {
+    max-width: 500px;
+    padding: 20px;
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.reminders-content {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-reminder {
+    padding: 10px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+}
+
 
 @media (max-width: 1000px) {
     .inicio-area {
@@ -182,6 +285,18 @@ body {
         z-index: 2;
         color: rgb(13, 63, 97);
         font-size: 15px;
+    }
+
+    td:not(:first-of-type) {
+        min-width: 9rem;
+    }
+
+    table, th {
+        padding: .7rem .6rem;
+    }
+
+    td{
+        padding: .3em .7em;
     }
 }
 
