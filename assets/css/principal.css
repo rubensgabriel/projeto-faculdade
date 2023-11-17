@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+body {
+    font-family: 'Montserrat';
+}
 
 .inicio-area {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 85%;
+    width: 88%;
     gap: 10px;
     justify-items:center;
     align-items: center;
     font-family: 'Montserrat';
+    padding-left: 15px;
 }
 
 .inicio-conteudo {
@@ -29,7 +33,6 @@
 
 .inicio-area img {
     max-width: 550px;
-    justify-self: flex-end;
 }
 
 .btn-consulta {
@@ -74,14 +77,6 @@
     font-family: 'Montserrat';
 }
 
-#titulo2 {
-    color: rgb(7, 48, 73);
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 1.7em;
-}
-
 .dados-area {
     margin: auto;
     display: flex;
@@ -91,47 +86,34 @@
 }
 
 .card-dados {
-    background-color: rgba(36, 127, 187, 0);
     width: 240px;
-    box-sizing: border-box;
-    display: flex;
-    text-align: center;
-    height: 105px;
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    height: 100px;
     padding: 18px 20px;
-    border-radius: 8px;
-    position: relative;
+    border-radius: 3px;
     justify-content: center;
-    box-sizing: border-box;
     cursor: pointer;
     transition: .3s all ease-in-out;
-    z-index: 2;
     color: rgb(13, 63, 97);
     font-size: 20px;
-    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.247)
 }
 
-.card-dados-principal, .card-dados2 {
-    position: absolute;
-    min-width: 200px;
-    background-color: rgb(242, 248, 253);
-    top: -20px;
-    left: -20px;
-    z-index: -1;
-    text-shadow: 10px 10px 15px rgba(0, 0, 0, 0.226);
-}
-
-.card-dados2 {
-    top: -10px;
-    left: -10px;
-    background-color: rgb(7, 56, 88);
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.301);
-}
-
-.card-dados-principal:hover {
-    top: -10px;
-    left: -10px;
-    background-color: rgb(7, 56, 88);
+.card-dados:hover {
+    box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.247);
+    background-color: rgb(8, 53, 90);
     color: white;
+    transform: scale(1.05);
+}
+
+.card-women:hover {
+    background-color: rgb(216, 103, 197);
+}
+
+.card-meds:hover {
+    background-color: rgb(236, 177, 15);
 }
 
 .card-info h2, .card-info p{
@@ -146,8 +128,27 @@
     font-weight: 400;
 }
 
+.men-info,
+.women-info,
+.meds-info {
+    background-color: rgb(8, 53, 90);
+    width: 10px;
+    margin-left: -20px;
+    margin-top: -18px;
+    height: 100px;
+    border-radius: 3px 0 0 3px;
+}
+
+.women-info {
+    background-color: rgb(216, 103, 197)
+}
+
+.meds-info {
+    background-color: rgb(236, 177, 15)
+}
+
 .section-dados1 {
-    background: linear-gradient(#ffffff, #a9d8f5);
+    background: linear-gradient(#ffffff, #8ee4fa);
 }
 
 .section-dados2 {
@@ -155,7 +156,7 @@
     padding: 50px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 40px;
     justify-items: center;
     background-image: url(../img/login-bg.jpg);
     background-attachment: fixed;
@@ -164,17 +165,29 @@
 }
 
 .section-dados3 {
-    background: linear-gradient(#bbe2fa, #ffffff);
-    height: 600px; 
+    background: linear-gradient(#8ae6fd, #ffffff);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-items:center;
+    align-items: center;
+    font-family: 'Montserrat';
+}
+
+.section-dados3 img {
+    max-width: 550px;
 }
 
 .table__body {
+    background-color: rgb(255, 255, 255);
     margin: 0;
     border-radius: 10px;
     overflow: auto;
     max-width: 500px;
     min-width: 390px;
     height: 230px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.384);
 }
 
 .table__body::-webkit-scrollbar {
@@ -216,11 +229,17 @@ thead th {
 }
 
 tbody > tr:nth-child(even){
-    background-color: #ffffffdc;
+    background-color: rgba(245, 245, 245, 0.863)
 }
 
 tbody > tr:nth-child(odd){
     background-color: rgba(255, 255, 255, 0.966);
+}
+
+tbody tr:hover {
+    transition: .5s;
+    background-color: rgb(198, 237, 255);
+    cursor: pointer;
 }
 
 .alert1 {
@@ -251,11 +270,12 @@ tbody > tr:nth-child(odd){
     flex-direction: column;
     gap: 10px;
     border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.384);
 }
 
 .reminders-content {
     display: grid;
-    gap: 20px;
+    gap: 18px;
 }
 
 .card-reminder {
@@ -266,6 +286,13 @@ tbody > tr:nth-child(odd){
     flex-direction: row;
     align-content: center;
 }
+
+.card-reminder:hover {
+    transition: .5s;
+    background-color: rgb(198, 237, 255);
+    cursor: pointer;
+}
+
 .card-reminder i{
     font-size: 25px;
     margin-right: 10px;
@@ -289,14 +316,8 @@ tbody > tr:nth-child(odd){
 
 
 @media (max-width: 1000px) {
-    .inicio-area {
-        margin: 10px auto 0px;
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-
-    .inicio-area img {
-        justify-self: center;
+    .inicio-conteudo h1{
+        font-size: 1.9rem;
     }
 
     .card-info h2, .card-info p{
@@ -313,20 +334,31 @@ tbody > tr:nth-child(odd){
     }
 
     .card-dados {
-        width: 210px;
+        width: 200px;
         height: 90px;
         padding: 15px 12px;
-       
-        box-sizing: border-box;
-        cursor: pointer;
-        transition: .3s all ease-in-out;
-        z-index: 2;
-        color: rgb(13, 63, 97);
-        font-size: 15px;
+    }
+
+    .men-info,
+    .women-info,
+    .meds-info {
+        margin-top: -15px;
+        height: 90px;
+        margin-left: -13px;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 830px) {
+    .inicio-area {
+        margin: 10px auto 0px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .inicio-area img {
+        justify-self: center;
+    }
+
     .section-dados2 {
         padding: 50px 20px;
         grid-template-columns: 1fr;
@@ -350,5 +382,16 @@ tbody > tr:nth-child(odd){
     
     .dados-area {
         gap: 50px;
+    }
+
+    .table__body {
+        min-width: 300px;
+        height: 230px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.384);
+    }
+
+    table {
+        width: 110%;
+        font-size: 15px;
     }
 }
