@@ -147,28 +147,34 @@
 }
 
 .section-dados1 {
-    background: linear-gradient(#ffffff, #a9d8f5);  
+    background: linear-gradient(#ffffff, #a9d8f5);
 }
 
 .section-dados2 {
     background-color: rgb(7, 56, 88);
-    padding: 20px;
+    padding: 50px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
     justify-items: center;
+    background-image: url(../img/login-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.13) inset;
 }
 
 .section-dados3 {
-    background: linear-gradient(#ffffff, #bbe2fa);
+    background: linear-gradient(#bbe2fa, #ffffff);
     height: 600px; 
 }
 
 .table__body {
-    background-color: #fffb;
     margin: 0;
-    border-radius: .6rem;
+    border-radius: 10px;
     overflow: auto;
     max-width: 500px;
+    min-width: 390px;
+    height: 230px;
 }
 
 .table__body::-webkit-scrollbar {
@@ -205,12 +211,12 @@ td{
 thead th {
     top: 0;
     left: 0;
-    background-color: rgb(16, 113, 177);
+    background-color: rgb(7, 56, 88);
     color: rgb(255, 255, 255);
 }
 
 tbody > tr:nth-child(even){
-    background-color: #ffffffb4;
+    background-color: #ffffffdc;
 }
 
 tbody > tr:nth-child(odd){
@@ -228,8 +234,13 @@ tbody > tr:nth-child(odd){
 }
 
 .header-reminders {
-    background-color: blue;
-    padding: 0;
+    background-color: rgb(7, 56, 88);
+    padding: 10px;
+    margin: -20px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    font-weight: bold;
 }
 
 .reminders {
@@ -243,14 +254,37 @@ tbody > tr:nth-child(odd){
 }
 
 .reminders-content {
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    gap: 20px;
 }
 
 .card-reminder {
     padding: 10px;
-    background-color: rgb(238, 238, 238);
+    background-color: rgba(241, 241, 241, 0.829);
     border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.card-reminder i{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.reminder-deleted {
+    background-color: red;
+    width: 10px;
+    margin: -10px;
+    margin-right: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+.reminder-included {
+    background-color: rgb(23, 168, 18);
+    width: 10px;
+    margin: -10px;
+    margin-right: 10px;
+    border-radius: 10px 0 0 10px;
 }
 
 
@@ -259,6 +293,10 @@ tbody > tr:nth-child(odd){
         margin: 10px auto 0px;
         grid-template-columns: 1fr;
         gap: 10px;
+    }
+
+    .inicio-area img {
+        justify-self: center;
     }
 
     .card-info h2, .card-info p{
@@ -286,21 +324,19 @@ tbody > tr:nth-child(odd){
         color: rgb(13, 63, 97);
         font-size: 15px;
     }
+}
 
-    td:not(:first-of-type) {
-        min-width: 9rem;
-    }
-
-    table, th {
-        padding: .7rem .6rem;
-    }
-
-    td{
-        padding: .3em .7em;
+@media (max-width: 800px) {
+    .section-dados2 {
+        padding: 50px 20px;
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 500px) {
+    main {
+        margin-left: -18px;
+    }
     .inicio-area {
         width: 95%;
         margin-left: 5px;
