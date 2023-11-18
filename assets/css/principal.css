@@ -82,6 +82,7 @@ body {
     display: flex;
     justify-content: space-between;
     max-width: 850px;
+    margin-bottom: 10px;
     gap: 60px;
 }
 
@@ -153,7 +154,7 @@ body {
 
 .section-dados2 {
     background-color: rgb(7, 56, 88);
-    padding: 50px 20px;
+    padding: 60px 20px 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
@@ -285,10 +286,10 @@ tbody tr:hover {
     display: flex;
     flex-direction: row;
     align-content: center;
+    transition: .5s;
 }
 
-.card-reminder:hover {
-    transition: .5s;
+.card-reminder:hover {  
     background-color: rgb(198, 237, 255);
     cursor: pointer;
 }
@@ -316,6 +317,10 @@ tbody tr:hover {
 
 
 @media (max-width: 1000px) {
+    .inicio-area {
+        width: 94%;
+    }
+
     .inicio-conteudo h1{
         font-size: 1.9rem;
     }
@@ -350,9 +355,8 @@ tbody tr:hover {
 
 @media (max-width: 830px) {
     .inicio-area {
-        margin: 10px auto 0px;
+        margin: 15px auto 0px;
         grid-template-columns: 1fr;
-        gap: 10px;
     }
 
     .inicio-area img {
@@ -369,10 +373,15 @@ tbody tr:hover {
     main {
         margin-left: -18px;
     }
+
+    .section-dados2 {
+        padding: 50px 10px;
+    }
+
     .inicio-area {
         width: 95%;
         margin-left: 5px;
-        margin-top: 30px;
+        margin-top: 20px;
         line-height: 25px;
     }
 
@@ -385,7 +394,7 @@ tbody tr:hover {
     }
 
     .table__body {
-        min-width: 300px;
+        min-width: 280px;
         height: 230px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.384);
     }
