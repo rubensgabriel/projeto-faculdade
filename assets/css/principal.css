@@ -183,7 +183,7 @@ body {
 .table__body {
     background-color: rgb(255, 255, 255);
     margin: 0;
-    border-radius: 10px;
+    border-radius: 8px;
     overflow: auto;
     max-width: 500px;
     min-width: 390px;
@@ -265,13 +265,30 @@ tbody tr:hover {
 
 .reminders {
     max-width: 500px;
+    max-height: 310px;
     padding: 20px;
     background-color: rgb(252, 252, 252);
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.384);
+    overflow: auto;
+}
+
+.reminders::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.reminders::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.reminders:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
 }
 
 .reminders-content {
@@ -394,7 +411,7 @@ tbody tr:hover {
     }
 
     .table__body {
-        min-width: 280px;
+        min-width: 270px;
         height: 230px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.384);
     }

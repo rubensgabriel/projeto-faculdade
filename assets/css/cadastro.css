@@ -301,6 +301,7 @@ thead th {
 tbody > tr:nth-child(even){
     background-color: #0000000b;
 }
+
 tbody > tr:nth-child(odd){
     background-color: #fff6;
 }

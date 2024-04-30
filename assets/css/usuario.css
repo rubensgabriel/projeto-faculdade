@@ -5,7 +5,7 @@ body {
 
 .dados-usuario {
     max-width: 420px;
-    margin: 20px auto 9px;
+    margin: 20px auto 30px;
     border-left: 5px solid rgb(19, 61, 124);
     box-sizing: border-box;
     padding: 15px 0px 15px 25px;
@@ -90,9 +90,8 @@ input:focus {
     .dados-usuario {
         max-width: 420px;
         margin-right: 12px;
-        margin-left: -17px;
+        margin-left: -25px;
         padding: 20px 0px 20px 25px;
-        margin-top: -10px;
     }
     
     .btn-area {
